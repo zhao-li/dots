@@ -3,6 +3,7 @@ syntax enable               " syntax coloring
 let mapleader = ","         " maps leader from \" (double quote) to ,
 let NERDTreeShowHidden=1
 call pathogen#infect() " Loads plugins
+set clipboard=unnamedplus " need to install vim-gnome to copy to system clipboard
 
 " *** General Settings ***
   set showcmd
