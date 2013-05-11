@@ -30,8 +30,8 @@ shopt -s checkwinsize
 
 unset color_prompt force_color_prompt
 
-source /usr/local/Cellar/git/1.8.1.5/etc/bash_completion.d/git-completion.bash
-source /usr/local/Cellar/git/1.8.1.5/etc/bash_completion.d/git-prompt.sh
+source /usr/local/Cellar/git/1.8.2.3/etc/bash_completion.d/git-completion.bash
+source /usr/local/Cellar/git/1.8.2.3/etc/bash_completion.d/git-prompt.sh
 PROMPT_COMMAND='CurDir=`pwd`'
 PS1="\$CurDir\n\$(__git_ps1 '/%s')\$ "
 
