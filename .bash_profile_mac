@@ -74,6 +74,8 @@ fi
 
 export PATH="$HOME/.rbenv/bin:$PATH" # Load rbenv
 eval "$(rbenv init -)"
+export RBENV_ROOT=/usr/local/var/rbenv # Load rbenv if installed with home brew
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi 
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
