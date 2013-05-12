@@ -72,8 +72,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-export PATH="$HOME/.rbenv/bin:$PATH" # Load rbenv
-eval "$(rbenv init -)"
 export RBENV_ROOT=/usr/local/var/rbenv # Load rbenv if installed with home brew
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi 
 
