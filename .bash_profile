@@ -70,8 +70,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+export PATH=${PATH}:/home/zli/Projects/adt-bundle-linux/sdk/platform-tools:/home/zli/Projects/adt-bundle-linux/sdk/tools # Load Andriod SDK
 export PATH="$HOME/.rbenv/bin:$PATH" # Load rbenv
-eval "$(rbenv init -)"
+eval "$(rbenv init -)" # Load rbenv
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
