@@ -30,8 +30,8 @@ shopt -s checkwinsize
 
 unset color_prompt force_color_prompt
 
-PROMPT_COMMAND='CurDir=`pwd | sed -re "s!home/zli/rails-projects/!!g"`'
-PS1="\$CurDir\n\$(__git_ps1 '/%s')\$ "
+source /etc/bash_completion.d/git-prompt
+PS1='\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]${PWD/#$HOME/~}\[\033[00m\]$(__git_ps1 " (%s)") $ '
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -69,25 +69,3 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
-
-export PATH=${PATH}:/home/zli/Projects/adt-bundle-linux/sdk/platform-tools:/home/zli/Projects/adt-bundle-linux/sdk/tools # Load Andriod SDK
-export PATH="$HOME/.rbenv/bin:$PATH" # Load rbenv
-eval "$(rbenv init -)" # Load rbenv
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-# for work
-alias wp="cd ~/Projects"
-alias ra="sudo service apache2 restart"
-alias sa="sudo service apache2 stop"
-alias ss="cd ~/Projects/startingspark"
-alias rss="rake ss:bootstrap AUTO_ACCEPT=true"
-alias et="cd ~/Projects/etgraphics"
-alias ret="rake et:bootstrap AUTO_ACCEPT=true"
-alias kc="cd ~/Projects/keithscookies"
-alias rkc="rake keiths_cookies:bootstrap AUTO_ACCEPT=true"
-kcgh () {
-  cd ~/Projects/keithscookies
-  cd ~/.rvm/gems/$CUSTOM_RUBY
-}
