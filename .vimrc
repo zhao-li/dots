@@ -2,7 +2,6 @@ set nocompatible            " increase compatability with plugins
 syntax enable               " syntax coloring
 let mapleader = ","         " maps leader from \" (double quote) to ,
 let NERDTreeShowHidden=1
-call pathogen#infect() " Loads plugins
 set clipboard=unnamedplus " need to install vim-gnome to copy to system clipboard
 
 " *** General Settings ***
@@ -16,8 +15,6 @@ set clipboard=unnamedplus " need to install vim-gnome to copy to system clipboar
   set tabstop=2
   set nu ruler                            " forces ruler to be visible (vice toggle)
   set scrolloff=3                          " number of lines above and below cursor
-  set backupdir=~/tmp/vi_backup " prevents vi liter of backup files by consolidating into one directory
-  set directory=~/tmp/vi_swap " prevents vi liter of swap files by consolidating into one directory
   set clipboard=unnamedplus
 
   set background=dark
@@ -55,7 +52,3 @@ set clipboard=unnamedplus " need to install vim-gnome to copy to system clipboar
   "                         saves and restores the buffer list
   "                           |
   "                           where to save the viminfo files
-
-" Project Mappings
-  nmap <leader>p1 :e ~/Projects/keithscookies/config/routes.rb<CR>
-  nmap <leader>p2 :e ~/Projects/keithscookies/config/routes.rb<CR>
