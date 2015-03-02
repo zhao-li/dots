@@ -2,7 +2,7 @@ function work_on {
   cd /path/to/src &&
   fig up &
   docker run -it -d -p 8181:8181 --name ide -v /path/to/src:/workspace/ kdelfour/cloud9-docker &&
-  xdg-open http://localhost:8181 &
+  xdg-open http://0.0.0.0:8181 &
   until [ "$CONTAINER_UP" -eq 0 ]
     do
       sleep 1
