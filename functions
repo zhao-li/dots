@@ -1,19 +1,28 @@
 function work_on {
-  cd /path/to/src &&
+  PROJECT_PATH=$(path_for $1)
+  cd $PROJECT_PATH &&
   fig up &
-  docker run -it -d -p 8181:8181 --name ide -v /path/to/src:/workspace/ kdelfour/cloud9-docker &&
+  docker run -it -d -p 8181:8181 --name ide -v $PROJECT_PATH:/workspace/ kdelfour/cloud9-docker &&
   xdg-open http://0.0.0.0:8181 &
   until [ "$CONTAINER_UP" -eq 0 ]
     do
       sleep 1
-      cd /path/to/src && fig port web 3000
+      cd $PROJECT_PATH && fig port web 3000
       CONTAINER_UP=$?
     done
   xdg-open http://$(fig port web 3000) &
 }
 
 function stop_working {
-  cd /path/to/src && fig stop
+  PROJECT_PATH=$(path_for $1)
+  cd $PROJECT_PATH && fig stop
   docker stop ide
   docker rm ide
+}
+
+function path_for {
+  case $1 in
+    *)
+      echo "Unknown project";;
+  esac
 }
