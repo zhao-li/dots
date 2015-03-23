@@ -1,4 +1,4 @@
-function work_on {
+function start_working {
   PROJECT_PATH=$(path_for $1)
   cd $PROJECT_PATH &&
   fig up &
