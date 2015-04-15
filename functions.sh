@@ -1,4 +1,5 @@
 function start_working {
+  source projects.sh
   PROJECT_PATH=$(path_for $1)
 
   wait_for_docker
@@ -19,10 +20,8 @@ function stop_working {
 }
 
 function path_for {
-  case $1 in
-    *)
-      echo "Unknown project";;
-  esac
+  path="$1_path"
+  echo ${!path}
 }
 
 function wait_for_docker {
