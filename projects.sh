@@ -1,1 +1,1 @@
-export example_path="~/Projects/example"
+export example_path="$HOME/Projects/example"
