@@ -5,4 +5,5 @@ sudo apt-get update && apt-get install -y \
   gitk \
   gitg \
   tmux \
-  vim
+  vim \
+  vim-gnome
