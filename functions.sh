@@ -5,7 +5,8 @@ function start_working {
   wait_for_docker
   cd $PROJECT_PATH &&
   docker-compose up &
-  docker run -it -d -p 8181:8181 --name ide -v $PROJECT_PATH:/workspace/ kdelfour/cloud9-docker &&
+  #docker run -it -d -p 8181:8181 --name ide -v $PROJECT_PATH:/workspace/ kdelfour/cloud9-docker && # https://github.com/kdelfour/cloud9-docker/issues/5
+  docker run -it -d -p 8181:8181 --name ide -v $PROJECT_PATH:/workspace/ zhao-li/cloud9-docker &&
   xdg-open http://0.0.0.0:8181 &> /dev/null &
   
   wait_for_container

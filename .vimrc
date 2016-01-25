@@ -1,6 +1,5 @@
 set nocompatible            " increase compatability with plugins
 syntax enable               " syntax coloring
-let mapleader = ","         " maps leader from \" (double quote) to ,
 let NERDTreeShowHidden=1
 set clipboard=unnamedplus " need to install vim-gnome to copy to system clipboard
 

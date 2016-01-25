@@ -16,3 +16,8 @@ PS1='\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]${PWD/#$HOME/~}\[\033[00m\]$(_
 source /etc/bash_completion
 
 source ~/dots/functions.sh
+source ~/dots/docker.sh
+source ~/dots/packer.sh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
