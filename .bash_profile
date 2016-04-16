@@ -30,6 +30,6 @@ shopt -s checkwinsize
 
 unset color_prompt force_color_prompt
 
-source /usr/local/Cellar/git/1.9.0/etc/bash_completion.d/git-completion.bash
-source /usr/local/Cellar/git/1.9.0/etc/bash_completion.d/git-prompt.sh
-PS1='\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]${PWD/#$HOME/~}\[\033[00m\]$(__git_ps1 " (%s)") $ '
+source ~/dots/functions.sh
+setup_git
+

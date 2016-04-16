@@ -43,3 +43,12 @@ function wait_for_container {
       CONTAINER_UP=$?
     done
 }
+
+function setup_git {
+  PATH=/usr/local/bin:$PATH # use homebrew git instead of xcode git
+  GIT_VERSION=$(git --version | cut -d ' ' -f 3)
+  source /usr/local/Cellar/git/$GIT_VERSION/etc/bash_completion.d/git-completion.bash
+  source /usr/local/Cellar/git/$GIT_VERSION/etc/bash_completion.d/git-prompt.sh
+  PS1='\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]${PWD/#$HOME/~}\[\033[00m\]$(__git_ps1 " (%s)") $ '
+}
+
