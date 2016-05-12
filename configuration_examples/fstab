@@ -1,0 +1,2 @@
+/dev/sda3        /extra_storage  ext4    rw,user,auto,exec 0       0
+
