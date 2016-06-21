@@ -6,7 +6,7 @@ export GOVC_MIN_API_VERSION=5.1
 
 
 function clean_docker {
-  wget -qO- https://raw.githubusercontent.com/blueyed/dotfiles/master/usr/bin/docker-cleanup | sh
+  wget -qO- https://raw.githubusercontent.com/blueyed/dotfiles/master/usr/bin/docker-cleanup | sudo sh
 }
 
 if [[ $- == *i* ]]; then # if interactive
