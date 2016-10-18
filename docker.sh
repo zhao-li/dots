@@ -7,6 +7,7 @@ export GOVC_MIN_API_VERSION=5.1
 
 function clean_docker {
   wget -qO- https://raw.githubusercontent.com/blueyed/dotfiles/master/usr/bin/docker-cleanup | sudo sh
+  docker volume rm $(docker volume ls -qf dangling=true) #http://stackoverflow.com/questions/39718294/error-running-docker-container-no-space-left-on-device-data-db-journal#answer-39755238
 }
 
 if [[ $- == *i* ]]; then # if interactive
