@@ -51,3 +51,6 @@ set clipboard=unnamedplus " need to install vim-gnome to copy to system clipboar
   "                         saves and restores the buffer list
   "                           |
   "                           where to save the viminfo files
+
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swp//
