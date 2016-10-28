@@ -19,7 +19,8 @@ if [ "$(uname)" == "Darwin" ]; then
     git \
     tmux
   brew cask install \
-    gitx
+    gitx \
+    spectacle
   sym_link .bash_profile $path
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   echo "doing ubuntu stuff"
