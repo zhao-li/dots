@@ -12,6 +12,8 @@ path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 sym_link .tmux.conf $path
 sym_link .vimrc $path
+mkdir -p ~/.vim/swp/
+mkdir -p ~/.vim/backup/
 
 if [ "$(uname)" == "Darwin" ]; then
   echo "doing mac stuff"
@@ -19,7 +21,11 @@ if [ "$(uname)" == "Darwin" ]; then
     git \
     tmux
   brew cask install \
-    gitx \
+    evernote \
+    firefox \
+    google-chrome \
+    onedrive \
+    rowanj-gitx \
     spectacle
   sym_link .bash_profile $path
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
