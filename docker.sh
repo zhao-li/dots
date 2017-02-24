@@ -4,7 +4,7 @@ export GOVC_MIN_API_VERSION=5.1
 
 # clear out docker images to free up space
 # example usage:
-# on linux: sudo bash -c \
+# in linux prompt: sudo bash -c \
 #   "$(declare -f clean_docker); clean_docker"
 
 function clean_docker {
