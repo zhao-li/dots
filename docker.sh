@@ -2,6 +2,11 @@ export GOVC_MIN_API_VERSION=5.1
 # notes about /etc/default/docker
 #DOCKER_OPTS="-H tcp://127.0.0.1:4243 -H unix:///var/run/docker.sock"
 
+# clear out docker images to free up space
+# example usage:
+# on linux: sudo bash -c \
+#   "$(declare -f clean_docker); clean_docker"
+
 function clean_docker {
   docker volume rm $(docker volume ls -qf dangling=true) #http://stackoverflow.com/questions/39718294/error-running-docker-container-no-space-left-on-device-data-db-journal#answer-39755238
   docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
