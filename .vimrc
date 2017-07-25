@@ -18,6 +18,7 @@ set clipboard=unnamedplus " need to install vim-gnome to copy to system clipboar
   set background=dark
   set backupdir=~/.vim/backup//
   set directory=~/.vim/swp//
+  set autoindent
 
   if has('statusline')
     set laststatus=2            " always show statusline
