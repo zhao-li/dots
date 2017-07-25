@@ -12,11 +12,12 @@ set clipboard=unnamedplus " need to install vim-gnome to copy to system clipboar
   set shiftwidth=2
   set softtabstop=2
   set tabstop=2
-  set nu ruler                            " forces ruler to be visible (vice toggle)
+  set nu ruler                             " forces ruler to be visible (vice toggle)
   set scrolloff=3                          " number of lines above and below cursor
   set clipboard=unnamedplus
-
   set background=dark
+  set backupdir=~/.vim/backup//
+  set directory=~/.vim/swp//
 
   if has('statusline')
     set laststatus=2            " always show statusline
@@ -51,6 +52,3 @@ set clipboard=unnamedplus " need to install vim-gnome to copy to system clipboar
   "                         saves and restores the buffer list
   "                           |
   "                           where to save the viminfo files
-
-set backupdir=~/.vim/backup//
-set directory=~/.vim/swp//
