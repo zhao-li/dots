@@ -21,6 +21,7 @@ if [ "$(uname)" == "Darwin" ]; then
     git \
     tmux
   brew cask install \
+    dropbox \
     evernote \
     firefox \
     google-chrome \
