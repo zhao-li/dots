@@ -17,17 +17,7 @@ mkdir -p ~/.vim/backup/
 
 if [ "$(uname)" == "Darwin" ]; then
   echo "doing mac stuff"
-  brew install \
-    git \
-    tmux
-  brew cask install \
-    dropbox \
-    evernote \
-    firefox \
-    google-chrome \
-    onedrive \
-    rowanj-gitx \
-    spectacle
+  brew bundle
   sym_link .bash_profile $path
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   echo "doing ubuntu stuff"
