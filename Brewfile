@@ -1,7 +1,7 @@
 tap "homebrew/core"
 tap "homebrew/bundle"
-tap "caskroom/versions"
 tap "caskroom/cask"
+tap "caskroom/versions"
 brew "git"
 brew "tmux"
 cask "atom"
