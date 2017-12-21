@@ -12,6 +12,7 @@ let NERDTreeShowHidden=1
   set ignorecase                 " case insensitive search
   set incsearch                  " highlights letters while they're type in for search
   set nu ruler                   " forces ruler to be visible (vice toggle)
+  set paste
   set scrolloff=3                " number of lines above and below cursor
   set shiftwidth=2
   set showcmd
