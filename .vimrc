@@ -1,24 +1,23 @@
 set nocompatible            " increase compatability with plugins
 syntax enable               " syntax coloring
 let NERDTreeShowHidden=1
-set clipboard=unnamedplus " need to install vim-gnome to copy to system clipboard
 
 " *** General Settings ***
-  set showcmd
-  set incsearch                             " highlights letters while they're type in for search
-  set ignorecase                            " case insensitive search
-  set smartcase                             " respect case if capitalized for search
-  set expandtab
-  set shiftwidth=2
-  set softtabstop=2
-  set tabstop=2
-  set nu ruler                             " forces ruler to be visible (vice toggle)
-  set scrolloff=3                          " number of lines above and below cursor
-  set clipboard=unnamedplus
+  set autoindent
   set background=dark
   set backupdir=~/.vim/backup//
+  set clipboard=unnamedplus      " need to install vim-gnome to copy to system clipboard
   set directory=~/.vim/swp//
-  set autoindent
+  set expandtab
+  set ignorecase                 " case insensitive search
+  set incsearch                  " highlights letters while they're type in for search
+  set nu ruler                   " forces ruler to be visible (vice toggle)
+  set scrolloff=3                " number of lines above and below cursor
+  set shiftwidth=2
+  set showcmd
+  set softtabstop=2
+  set smartcase                  " respect case if capitalized for search
+  set tabstop=2
 
   if has('statusline')
     set laststatus=2            " always show statusline
