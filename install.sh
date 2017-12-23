@@ -18,7 +18,7 @@ mkdir -p ~/.vim/backup/
 if [ "$(uname)" == "Darwin" ]; then
   echo "doing mac stuff"
   brew bundle
-  atom install --packages-file atomfile
+  apm install --packages-file atomfile
   sym_link .bash_profile $path
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   echo "doing ubuntu stuff"
