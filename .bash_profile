@@ -21,5 +21,4 @@ unset color_prompt force_color_prompt
 source ~/dots/functions.sh
 source ~/dots/docker.sh
 
-setup_git
-
+setup_prompt
