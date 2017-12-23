@@ -1,5 +1,5 @@
-tap "homebrew/core"
 tap "homebrew/bundle"
+tap "homebrew/core"
 tap "caskroom/cask"
 tap "caskroom/versions"
 brew "git"
