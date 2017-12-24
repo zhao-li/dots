@@ -44,6 +44,10 @@ function wait_for_container {
     done
 }
 
+function setup_brew {
+  export PATH="/usr/local/bin:$PATH"
+}
+
 function setup_prompt {
   if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
