@@ -17,7 +17,7 @@ mkdir -p ~/.vim/backup/
 
 if [ "$(uname)" == "Darwin" ]; then
   echo "doing mac stuff"
-  brew bundle
+  brew update && brew upgrade && brew bundle
   apm install --packages-file atomfile
   sym_link .bash_profile $path
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
