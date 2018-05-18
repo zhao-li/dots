@@ -9,6 +9,7 @@ export GOVC_MIN_API_VERSION=5.1
 
 function clean_docker {
   docker system prune
+  docker image prune --all --filter "until=4320h" # delete images older than 6 months ago
 }
 
 if [[ $- == *i* ]]; then # if interactive
