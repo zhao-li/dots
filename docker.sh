@@ -8,8 +8,8 @@ export GOVC_MIN_API_VERSION=5.1
 #   "$(declare -f clean_docker); clean_docker"
 
 function clean_docker {
-  docker system prune
-  docker image prune --all --filter "until=4320h" # delete images older than 6 months ago
+  docker system prune --force
+  docker image prune --all --filter "until=4320h" --force # delete images older than 6 months ago
 }
 
 if [[ $- == *i* ]]; then # if interactive
