@@ -52,5 +52,10 @@ function setup_prompt {
   if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
   fi
-  PS1='\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]${PWD/#$HOME/~}\[\033[00m\]$(__git_ps1 " (%s)") $ '
+  white="\[\033[00m\]"
+  green="\[\033[01;32m\]"
+  blue="\[\033[01;34m\]"
+  user="\u"
+  git=$(__git_ps1 '(%s)')
+  PS1="💩$green$user$white:$blue${PWD/#$HOME/~}$white$git$ "
 }
