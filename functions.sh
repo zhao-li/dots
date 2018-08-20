@@ -57,5 +57,5 @@ function setup_prompt {
   blue="\[\033[01;34m\]"
   user="\u"
   git=$(__git_ps1 '(%s)')
-  PS1="💩$green$user$white:$blue${PWD/#$HOME/~}$white$git$ "
+  PS1="💩$green$user$white:$blue\w$white$git$ "
 }
