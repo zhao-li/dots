@@ -45,13 +45,13 @@ function wait_for_container {
 }
 
 function setup_brew {
+  if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+  fi
   export PATH="/usr/local/bin:$PATH"
 }
 
 function setup_prompt {
-  if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-  fi
   white="\[\e[00m\]"
   green="\[\e[01;32m\]"
   blue="\[\e[01;34m\]"
