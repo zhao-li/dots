@@ -9,15 +9,14 @@ shopt -s histappend
 HISTSIZE=1000
 HISTFILESIZE=2000
 
-# GIT branch in prompt
-PS1='\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]${PWD/#$HOME/~}\[\033[00m\]$(__git_ps1 " (%s)") $ '
-
 # auto-complete
 source /etc/bash_completion
 
 source ~/dots/functions.sh
 source ~/dots/docker.sh
 source ~/dots/packer.sh
+
+setup_prompt
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
