@@ -18,8 +18,10 @@ shopt -s checkwinsize
 
 unset color_prompt force_color_prompt
 
-source ~/dots/functions.sh
+source ~/dots/shell.sh
+source ~/dots/brew.sh
 source ~/dots/docker.sh
 
 setup_brew
 setup_prompt
+clean_docker
