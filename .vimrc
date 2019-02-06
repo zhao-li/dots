@@ -30,11 +30,6 @@ let NERDTreeShowHidden=1
 " *** End Map Section ***
 
 " *** Normal mappings ***
-  " simplify window navigation with ctrl
-    nmap <C-J> <C-W>j
-    nmap <C-K> <C-W>k
-    nmap <C-L> <C-W>l
-    nmap <C-H> <C-W>h
 " *** End Normal mappings ***
 
 " Tell vim to remember certain things when we exit
