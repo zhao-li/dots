@@ -1,6 +1,5 @@
 set nocompatible            " increase compatability with plugins
 syntax enable               " syntax coloring
-let NERDTreeShowHidden=1
 
 " *** General Settings ***
   set autoindent
@@ -23,11 +22,6 @@ let NERDTreeShowHidden=1
     set laststatus=2            " always show statusline
   endif
 " *** End General Settings ***
-
-" *** Map Section ***
-  map <leader>d :execute 'NERDTreeFind'<CR>
-  let NERDTreeQuitOnOpen = 1
-" *** End Map Section ***
 
 " Tell vim to remember certain things when we exit
   set viminfo='10,\"100,:20,%,n~/.viminfo
