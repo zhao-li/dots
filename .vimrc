@@ -35,9 +35,6 @@ let NERDTreeShowHidden=1
     nmap <C-K> <C-W>k
     nmap <C-L> <C-W>l
     nmap <C-H> <C-W>h
-  " simplify tabbed navigation with shift
-    nmap <S-H> gT
-    nmap <S-L> gt
 " *** End Normal mappings ***
 
 " Tell vim to remember certain things when we exit
