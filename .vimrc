@@ -29,9 +29,6 @@ let NERDTreeShowHidden=1
   let NERDTreeQuitOnOpen = 1
 " *** End Map Section ***
 
-" *** Normal mappings ***
-" *** End Normal mappings ***
-
 " Tell vim to remember certain things when we exit
   set viminfo='10,\"100,:20,%,n~/.viminfo
   "            |    |    |  | |
