@@ -6,6 +6,7 @@ tap "homebrew/core"
 brew "bash-completion"
 brew "git"
 brew "tmux"
+brew "vim" # ensures copy & pasting to clipboard works
 cask "adobe-acrobat-reader"
 cask "atom"
 cask "authy"

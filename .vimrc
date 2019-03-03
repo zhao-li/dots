@@ -5,7 +5,7 @@ syntax enable               " syntax coloring
   set autoindent
   set background=dark
   set backupdir=~/.vim/backup//
-  set clipboard=unnamedplus      " need to install vim-gnome to copy to system clipboard
+  set clipboard=unnamed
   set directory=~/.vim/swp//
   set expandtab
   set ignorecase                 " case insensitive search
