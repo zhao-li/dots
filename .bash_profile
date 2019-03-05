@@ -21,7 +21,9 @@ unset color_prompt force_color_prompt
 source ~/dots/shell.sh
 source ~/dots/brew.sh
 source ~/dots/docker.sh
+source ~/dots/ruby.sh
 
 setup_brew
 setup_prompt
 clean_docker
+setup_chruby
