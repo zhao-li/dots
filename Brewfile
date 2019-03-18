@@ -4,6 +4,7 @@ tap "caskroom/versions"
 tap "homebrew/bundle"
 tap "homebrew/core"
 brew "bash-completion"
+brew "bitwarden-cli"
 brew "git"
 brew "tmux"
 brew "vim" # ensures copy & pasting to clipboard works
