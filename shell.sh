@@ -1,3 +1,7 @@
+#!/bin/bash
+
+# This script and its functions supports the shell.
+
 function setup_prompt {
   white="\[\e[00m\]"
   green="\[\e[01;32m\]"

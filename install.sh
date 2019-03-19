@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# This script and its functions supports the installing a development environment.
 # run script with sudo bash install.sh
 
 function sym_link() {

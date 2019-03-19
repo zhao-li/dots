@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# This script and its functions supports updating the Linux OS.
 # https://askubuntu.com/questions/196768/how-to-install-updates-via-command-line
 
 echo "fetching the list of available updates"
