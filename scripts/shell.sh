@@ -2,7 +2,7 @@
 
 # This script and its functions supports the shell.
 
-function setup_prompt {
+function setup_shell_prompt {
   white="\[\e[00m\]"
   green="\[\e[01;32m\]"
   blue="\[\e[01;34m\]"
@@ -16,7 +16,7 @@ function setup_prompt {
   PS1+="$white$ "
 }
 
-function cleanup_history {
+function cleanup_shell_history {
   history -c # clear history
   history -w # write im history from memory to file
 }
