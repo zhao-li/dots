@@ -27,3 +27,9 @@ setup_brew
 setup_prompt
 clean_docker
 setup_chruby
+
+function cleanup {
+  history -c; history -w
+}
+
+trap 'cleanup' EXIT
