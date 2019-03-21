@@ -1,16 +1,6 @@
-# Collection of dot files
+# Environment Customizations
 
 Getting Started
 ---------------
-On Ubuntu:
-
-    sudo ./install.sh
-
-On Mac:
-
-    ./install.sh
-
-Bitwarden CLI Examples
-----------------------
-
-    $ bw list items --search alumni.usc  --pretty --session h@S4
+1. clone repository: `git clone --recursive https://github.com/zhao-li/dots.git`
+1. bootstrap environment: `./bootstrap.sh`
