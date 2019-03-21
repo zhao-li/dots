@@ -28,8 +28,8 @@ setup_prompt
 clean_docker
 setup_chruby
 
-function cleanup {
-  history -c; history -w
+function run_on_exit {
+  cleanup_history
 }
 
-trap 'cleanup' EXIT
+trap 'run_on_exit' EXIT

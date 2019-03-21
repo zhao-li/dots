@@ -15,3 +15,8 @@ function setup_prompt {
   PS1+='$(__git_ps1 "(%s)")' 
   PS1+="$white$ "
 }
+
+function cleanup_history {
+  history -c # clear history
+  history -w # write im history from memory to file
+}
