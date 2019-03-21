@@ -18,10 +18,9 @@ shopt -s checkwinsize
 
 unset color_prompt force_color_prompt
 
-source ~/dots/shell.sh
-source ~/dots/brew.sh
-source ~/dots/docker.sh
-source ~/dots/ruby.sh
+for file in scripts/*.sh; do
+  source $file
+done
 
 function run_on_entry {
   setup_brew

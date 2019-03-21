@@ -9,6 +9,10 @@ function sym_link() {
   ln -sf $path/$file ~/$file
 }
 
+for file in scripts/*.sh; do
+  source $file
+done
+
 path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 sym_link .tmux.conf $path
@@ -20,7 +24,7 @@ if [ "$(uname)" == "Darwin" ]; then
   echo "doing mac stuff"
   brew update && brew upgrade && brew bundle
   apm install --packages-file atomfile
-  $path/vscode.sh
+  install_vscode_extensions
   sym_link .bash_profile $path
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   echo "doing ubuntu stuff"
