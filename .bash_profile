@@ -27,3 +27,9 @@ setup_brew
 setup_prompt
 clean_docker
 setup_chruby
+
+function run_on_exit {
+  cleanup_history
+}
+
+trap 'run_on_exit' EXIT
