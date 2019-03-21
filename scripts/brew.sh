@@ -8,3 +8,9 @@ function setup_brew {
   fi
   export PATH="/usr/local/bin:$PATH"
 }
+
+function install_brew_packages() {
+  brew update
+  brew upgrade
+  brew bundle
+}

@@ -17,13 +17,13 @@ path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 sym_link .tmux.conf $path
 sym_link .vimrc $path
-mkdir -p ~/.vim/swp/
-mkdir -p ~/.vim/backup/
+mkdir -p ~/.vim/swp/ ~/.vim/backup/
+sym_link .bashrc $path
 
 if [ "$(uname)" == "Darwin" ]; then
   echo "doing mac stuff"
-  brew update && brew upgrade && brew bundle
-  apm install --packages-file atomfile
+  install_brew_packages
+  install_atom_plugins
   install_vscode_extensions
   sym_link .bash_profile $path
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
@@ -35,7 +35,6 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     tmux \
     vim \
     vim-gnome
-  sym_link .bashrc $path
 elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
   echo "doing microsoft stuff"
 fi
