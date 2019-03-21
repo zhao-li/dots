@@ -20,3 +20,8 @@ function cleanup_history {
   history -c # clear history
   history -w # write im history from memory to file
 }
+
+function setup_shell_history {
+  # saves from pressing up multiple times by not duplicating same comamnd in history
+  HISTCONTROL=ignoredups:ignorespace
+}
