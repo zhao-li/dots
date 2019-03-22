@@ -11,7 +11,12 @@ function setup_brew {
 }
 
 function install_brew_packages() {
+  update_brew
+  brew bundle
+}
+
+function update_brew() {
   brew update
   brew upgrade
-  brew bundle
+  brew cask upgrade
 }
