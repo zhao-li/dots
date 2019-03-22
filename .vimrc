@@ -1,37 +1,24 @@
-set nocompatible            " increase compatability with plugins
-syntax enable               " syntax coloring
+syntax enable " syntax coloring
 
-" *** General Settings ***
-  set autoindent
-  set background=dark
-  set backupdir=~/.vim/backup//
-  set clipboard=unnamed
-  set directory=~/.vim/swp//
-  set expandtab
-  set ignorecase                 " case insensitive search
-  set incsearch                  " highlights letters while they're type in for search
-  set nu ruler                   " forces ruler to be visible (vice toggle)
-  set scrolloff=3                " number of lines above and below cursor
-  set shiftwidth=2
-  set showcmd
-  set softtabstop=2
-  set smartcase                  " respect case if capitalized for search
-  set tabstop=2
+set autoindent                 " start new line at proper indentation
+set backspace=indent,eol,start " allows deleting past start location in edit mode
+set backupdir=~/.vim/backup/   " place backup files under home folder
+set clipboard=unnamed          " allow copying to system clipboard
+set directory=~/.vim/swp/      " place swap files under home folder
+set expandtab                  " expand tabs to spaces
+set ignorecase                 " case insensitive search
+set incsearch                  " highlights letters while they're type in for search
+set laststatus=2               " 2 means always show statusline: https://stackoverflow.com/a/21069262
+set nu ruler                   " forces ruler to be visible (vice toggle)
+set scrolloff=2                " number of lines above and below cursor
+set softtabstop=2              " allows deleting multiple spaces at a time
+set smartcase                  " respect case if capitalized for search
 
-  if has('statusline')
-    set laststatus=2            " always show statusline
-  endif
-" *** End General Settings ***
-
-" Tell vim to remember certain things when we exit
-  set viminfo='10,\"100,:20,%,n~/.viminfo
-  "            |    |    |  | |
-  "            marks will be remembered for up to 10 previously edited files
-  "                 |    |  | |
-  "                 save up to 100 lines for each register
-  "                      |  | |
-  "                      20 lines of command-line history will be remembered
-  "                         | |
-  "                         saves and restores the buffer list
-  "                           |
-  "                           where to save the viminfo files
+set statusline+=%h                 " help flag, e.g. [help]
+set statusline+=%r                 " read-only flag, e.g. [RO]
+set statusline+=%F                 " filename and path
+set statusline+=%m                 " modifed flag, e.g. [+]
+set statusline+=%=                 " section separator
+set statusline+=Col:\ %c           " column info
+set statusline+=,\                 " comma and space separator
+set statusline+=Line:\ %l/%L\ %p%% " line info
