@@ -3,8 +3,9 @@
 # This script and its functions supports brew.
 
 function setup_brew {
-  if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
+  if [ -f "$(brew --prefix)"/etc/bash_completion ]; then
+    # shellcheck disable=SC1090
+    . "$(brew --prefix)"/etc/bash_completion
   fi
   export PATH="/usr/local/bin:$PATH"
 }
