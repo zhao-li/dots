@@ -8,6 +8,7 @@ function sym_link() {
   path=$2
   ln -sf "$path"/"$file" ~/"$file"
 }
+    
 
 for file in scripts/*.sh; do
   # shellcheck disable=SC1090
