@@ -12,7 +12,3 @@ To lint shell scripts:
     $ shellcheck *
     $ shellcheck scripts/*
     $ shellcheck scripts/tasks/*
-
-To get more information:
-
-    $ shellcheck -x *
