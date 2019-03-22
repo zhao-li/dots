@@ -9,7 +9,6 @@ function sym_link() {
   ln -sf "$path"/"$file" ~/"$file"
 }
     
-
 for file in scripts/*.sh; do
   # shellcheck disable=SC1090
   source "$file"
