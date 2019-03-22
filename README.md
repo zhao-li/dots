@@ -1,16 +1,18 @@
-# Collection of dot files
+# Environment Customizations
 
 Getting Started
 ---------------
-On Ubuntu:
+1. clone repository: `git clone --recursive https://github.com/zhao-li/dots.git`
+1. bootstrap environment: `./bootstrap.sh`
 
-    sudo ./install.sh
+Linting
+-------
+To lint shell scripts:
 
-On Mac:
+    $ shellcheck *
+    $ shellcheck scripts/*
+    $ shellcheck scripts/tasks/*
 
-    ./install.sh
+To get more information:
 
-Bitwarden CLI Examples
-----------------------
-
-    $ bw list items --search alumni.usc  --pretty --session h@S4
+    $ shellcheck -x *

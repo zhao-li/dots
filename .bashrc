@@ -1,22 +1,18 @@
-# don't put duplicate lines in the history. See bash(1) for more options
-# ... or force ignoredups and ignorespace
-HISTCONTROL=ignoredups:ignorespace
+for file in ~/dots/scripts/*.sh; do
+  source $file
+done
 
-# append to the history file, don't overwrite it
-shopt -s histappend
+function run_on_entry {
+  setup_shell_history
+  setup_brew
+  setup_shell_prompt
+  clean_docker
+  setup_chruby
+}
 
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+function run_on_exit {
+  cleanup_shell_history
+}
 
-# auto-complete
-source /etc/bash_completion
-
-source ~/dots/functions.sh
-source ~/dots/docker.sh
-source ~/dots/packer.sh
-
-setup_prompt
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+run_on_entry
+trap 'run_on_exit' EXIT
