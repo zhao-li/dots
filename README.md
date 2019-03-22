@@ -9,6 +9,6 @@ Linting
 -------
 To lint shell scripts:
 
-    $ shellcheck *
-    $ shellcheck scripts/*
-    $ shellcheck scripts/tasks/*
+    $ shellcheck *.sh
+    $ shellcheck scripts/*.sh
+    $ shellcheck scripts/tasks/*.sh
