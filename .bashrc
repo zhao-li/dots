@@ -1,4 +1,4 @@
-for file in scripts/*.sh; do
+for file in ~/dots/scripts/*.sh; do
   source $file
 done
 
