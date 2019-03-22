@@ -8,13 +8,13 @@ function sym_link() {
   path=$2
   ln -sf "$path"/"$file" ~/"$file"
 }
+
+path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
     
-for file in scripts/*.sh; do
+for file in "$path"/scripts/*.sh; do
   # shellcheck disable=SC1090
   source "$file"
 done
-
-path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 sym_link .tmux.conf "$path"
 sym_link .vimrc "$path"
@@ -39,4 +39,3 @@ elif [ "$(substr "$(uname -s)" 1 5)" == "Linux" ]; then
 elif [ "$(substr "$(uname -s)" 1 10)" == "MINGW32_NT" ]; then
   echo "doing microsoft stuff"
 fi
-

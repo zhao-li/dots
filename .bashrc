@@ -1,5 +1,10 @@
-for file in ~/dots/scripts/*.sh; do
-  source $file
+#!/bin/bash
+
+# This script and its functions configures bash
+
+for file in ~/dots/scripts/*.sh; do # assumes dots repo is child of home directory
+  # shellcheck disable=SC1090
+  source "$file"
 done
 
 function run_on_entry {
