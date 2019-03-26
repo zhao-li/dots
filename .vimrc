@@ -1,7 +1,7 @@
 syntax enable " syntax coloring
 
 set autoindent                 " start new line at proper indentation
-set backspace=indent,eol,start " allows deleting past start location in edit mode
+set backspace=indent,eol,start " allows deleting past start location in edit mode: https://vi.stackexchange.com/questions/2162/why-doesnt-the-backspace-key-work-in-insert-mode
 set backupdir=~/.vim/backup/   " place backup files under home folder
 set clipboard=unnamed          " allow copying to system clipboard
 set directory=~/.vim/swp/      " place swap files under home folder
