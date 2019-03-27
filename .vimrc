@@ -13,6 +13,7 @@ set nu ruler                   " forces ruler to be visible (vice toggle)
 set scrolloff=2                " number of lines above and below cursor
 set softtabstop=2              " allows deleting multiple spaces at a time
 set smartcase                  " respect case if capitalized for search
+set shiftwidth=2               " keep tabs to 2 spaces
 
 set statusline+=%h                 " help flag, e.g. [help]
 set statusline+=%r                 " read-only flag, e.g. [RO]
