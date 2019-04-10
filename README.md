@@ -9,4 +9,4 @@ Linting
 -------
 To lint shell scripts:
 
-    $ shellcheck .bashrc .bash_profile *.sh scripts/*.sh scripts/tasks/*.sh
+    $ lint_project
