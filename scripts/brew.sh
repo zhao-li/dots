@@ -11,6 +11,7 @@ function setup_brew {
 }
 
 function install_brew_packages() {
+  xcode-select --install
   update_brew
   brew bundle
 }
