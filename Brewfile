@@ -8,6 +8,7 @@ brew "bash-completion"
 brew "bitwarden-cli"
 brew "git"
 brew "jq"
+brew "mas"
 brew "shellcheck"
 brew "tmux"
 brew "vim" # ensures copy & pasting to clipboard works
