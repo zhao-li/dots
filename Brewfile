@@ -11,7 +11,6 @@ brew "shellcheck"
 brew "tmux"
 brew "vim" # ensures copy & pasting to clipboard works
 cask "adobe-acrobat-reader"
-cask "atom"
 cask "authy"
 cask "bitwarden"
 cask "eloston-chromium"
