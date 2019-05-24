@@ -20,5 +20,6 @@ function update_brew() {
   brew update
   brew upgrade
   brew cask upgrade
+  mas upgrade
   brew doctor
 }
