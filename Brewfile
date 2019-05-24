@@ -3,6 +3,7 @@ tap "caskroom/drivers"
 tap "caskroom/versions"
 tap "homebrew/bundle"
 tap "homebrew/core"
+
 brew "bash-completion"
 brew "bitwarden-cli"
 brew "git"
@@ -10,6 +11,7 @@ brew "jq"
 brew "shellcheck"
 brew "tmux"
 brew "vim" # ensures copy & pasting to clipboard works
+
 cask "adobe-acrobat-reader"
 cask "authy"
 cask "bitwarden"
