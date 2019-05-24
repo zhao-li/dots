@@ -20,11 +20,9 @@ cask "eloston-chromium"
 cask "displaylink"
 cask "docker"
 cask "dropbox"
-cask "evernote"
 cask "firefox"
 cask "google-chrome"
 cask "handbrake"
-cask "onedrive"
 cask "rowanj-gitx"
 cask "signal"
 cask "soundflower"
@@ -32,3 +30,6 @@ cask "spectacle"
 cask "tor-browser"
 cask "thinkorswim"
 cask "visual-studio-code"
+
+mas "evernote", id: 406056744
+mas "onedrive", id: 823766827
