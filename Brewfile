@@ -1,4 +1,3 @@
-tap "caskroom/cask"
 tap "caskroom/drivers"
 tap "caskroom/versions"
 tap "homebrew/bundle"
