@@ -1,3 +1,5 @@
+" This file configures VI(M)
+
 syntax enable " syntax coloring
 
 set autoindent                 " start new line at proper indentation
