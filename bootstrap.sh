@@ -25,7 +25,6 @@ sym_link .inputrc "$path"
 if [ "$(uname)" == "Darwin" ]; then
   echo "doing mac stuff"
   install_brew_packages
-  install_atom_plugins
   install_vscode_extensions
   sym_link .bash_profile "$path"
 elif [ "$(substr "$(uname -s)" 1 5)" == "Linux" ]; then
