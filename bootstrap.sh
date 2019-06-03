@@ -20,6 +20,7 @@ sym_link .tmux.conf "$path"
 sym_link .vimrc "$path"
 mkdir -p ~/.vim/swp/ ~/.vim/backup/
 sym_link .bashrc "$path"
+sym_link .inputrc "$path"
 
 if [ "$(uname)" == "Darwin" ]; then
   echo "doing mac stuff"

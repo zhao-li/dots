@@ -1,0 +1,4 @@
+# This file configures Readline that is used by Bash
+
+"\e[A": history-search-backward # fuzzy search command history: https://unix.stackexchange.com/a/402398
+"\e[B": history-search-forward # fuzzy search command history: https://unix.stackexchange.com/a/402398
