@@ -11,6 +11,7 @@ brew "mas"
 brew "shellcheck"
 brew "tmux"
 brew "vim" # ensures copy & pasting to clipboard works
+brew "zsh"
 
 cask "adobe-acrobat-reader"
 cask "authy"
