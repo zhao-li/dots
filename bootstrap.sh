@@ -3,12 +3,6 @@
 # This script and its functions supports the installing a development environment.
 # run script without sudo: ./install.sh
 
-function sym_link() {
-  file=$1
-  path=$2
-  ln -sf "$path"/"$file" ~/"$file"
-}
-
 path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
     
 for file in "$path"/scripts/*.sh; do
