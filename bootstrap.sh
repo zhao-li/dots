@@ -16,6 +16,7 @@ set_up_bash $project_path
 
 if [ "$(uname)" == "Darwin" ]; then
   echo "doing mac stuff"
+  install_bash_it
   install_brew_packages
   install_vscode_extensions
   sym_link .bash_profile "$path"

@@ -10,6 +10,13 @@ function set_up_bash() {
   sym_link .inputrc "$project_path"
 }
 
+# This function installs bash-it
+# example usage: install_bash_it
+function install_bash_it() {
+  git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+  ~/.bash_it/install.sh --no-modify-config
+}
+
 # This function loads base-it
 # example usage: load_bash_it
 function load_bash_it() {
