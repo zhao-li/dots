@@ -13,6 +13,7 @@ done
 set_up_tmux "$project_path"
 set_up_vim "$project_path"
 set_up_bash "$project_path"
+sym_link .zshrc "$path"
 
 if [ "$(uname)" == "Darwin" ]; then
   echo "doing mac stuff"
