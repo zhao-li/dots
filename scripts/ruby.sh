@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 
 # This script and its functions supports the ruby environment.
 
-function setup_chruby {
+function set_up_chruby {
   brew_prefix=$(brew --prefix)
   chruby_path=$brew_prefix/opt/chruby/
 

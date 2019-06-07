@@ -8,15 +8,15 @@ for file in ~/dots/scripts/*.sh; do # assumes dots repo is child of home directo
 done
 
 function run_on_entry {
-  setup_shell_history
-  setup_brew
-  setup_shell_prompt
+  customize_shell
+  load_bash_it
+  load_brew
   clean_docker
-  setup_chruby
+  set_up_chruby
 }
 
 function run_on_exit {
-  cleanup_shell_history
+  clear_shell_history
 }
 
 run_on_entry
