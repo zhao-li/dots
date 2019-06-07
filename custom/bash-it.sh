@@ -14,6 +14,7 @@ export BASH_IT="/Users/zli/.bash_it"
 # Lock and Load a custom theme file.
 # Leave empty to disable theming.
 # location /.bash_it/themes/
+#export BASH_IT_THEME='/Users/zli/dots/custom/themes/zhaoli/zhaoli.theme.bash'
 export BASH_IT_THEME='clean'
 
 # (Advanced): Change this to the name of your remote repo if you
