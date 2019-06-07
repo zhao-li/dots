@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # These functions support configuring bash
 
