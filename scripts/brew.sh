@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 
 # This script and its functions supports brew.
 
-function setup_brew {
+function load_brew {
   if [ -f "$(brew --prefix)"/etc/bash_completion ]; then
     # shellcheck disable=SC1090
     . "$(brew --prefix)"/etc/bash_completion

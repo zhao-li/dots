@@ -9,3 +9,11 @@ function set_up_bash() {
   sym_link .bashrc "$project_path"
   sym_link .inputrc "$project_path"
 }
+
+# This function loads base-it
+# example usage: load_bash_it
+function load_bash_it() {
+  if [ -f ~/dots/custom/bash-it.bash ]; then
+    source ~/dots/custom/bash-it.bash
+  fi
+}
