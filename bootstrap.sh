@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # This script and its functions supports the installing a development environment.
 # run script without sudo: ./install.sh
