@@ -21,7 +21,7 @@ function install_bash_it() {
 # example usage: load_bash_it
 function load_bash_it() {
   echo "loading bash it"
-  if [ -d "~/.bash_it" ] && [ -f "~/dots/custom/bash-it.bash" ]; then
+  if [ -d "$HOME/.bash_it" ] && [ -f "$HOME/dots/custom/bash-it.bash" ]; then
     source ~/dots/custom/bash-it.bash
   fi
   set_prompt
@@ -39,7 +39,7 @@ function set_prompt {
 
   # could not find a way to fit on same line
   PS1="💩$blue$user$green$working_directory$cyan"
-  if [ -d "~/.bash_it" ] && [ -f "~/dots/custom/bash-it.bash" ]; then
+  if [ -d "$HOME/.bash_it" ] && [ -f "$HOME/dots/custom/bash-it.bash" ]; then
     PS1+='$(__git_ps1 "(%s)")' 
   fi
   PS1+="$white$ "
