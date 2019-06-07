@@ -19,7 +19,7 @@ if [ "$(uname)" == "Darwin" ]; then
   install_bash_it
   install_brew_packages
   install_vscode_extensions
-  sym_link .bash_profile "$path"
+  sym_link .bash_profile "$project_path"
 elif [ "$(substr "$(uname -s)" 1 5)" == "Linux" ]; then
   echo "doing ubuntu stuff"
   sudo apt-get update && apt-get install -y \
