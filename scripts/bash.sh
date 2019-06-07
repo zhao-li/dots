@@ -21,6 +21,7 @@ function install_bash_it() {
 # example usage: load_bash_it
 function load_bash_it() {
   if [ -d "$HOME/.bash_it" ] && [ -f "$HOME/dots/custom/bash-it.sh" ]; then
+    BASH_IT_CUSTOM="$HOME/dots/custom/"
     source ~/dots/custom/bash-it.sh
   fi
   set_prompt

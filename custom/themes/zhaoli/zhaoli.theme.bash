@@ -1,0 +1,1 @@
+safe_append_prompt_command set_prompt

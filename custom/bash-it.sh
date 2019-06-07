@@ -15,7 +15,7 @@ export BASH_IT="/Users/zli/.bash_it"
 # Leave empty to disable theming.
 # location /.bash_it/themes/
 #export BASH_IT_THEME='/Users/zli/dots/custom/themes/zhaoli/zhaoli.theme.bash'
-export BASH_IT_THEME='clean'
+export BASH_IT_THEME='zhaoli'
 
 # (Advanced): Change this to the name of your remote repo if you
 # cloned bash-it with a remote other than origin such as `bash-it`.
