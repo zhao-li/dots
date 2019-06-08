@@ -34,6 +34,7 @@ function set_bash_it_prompt() {
   SCM_THEME_PROMPT_PREFIX="${purple}("
   SCM_THEME_PROMPT_SUFFIX=")"
   SCM_GIT_SHOW_DETAILS=false
+  SCM_GIT_SHOW_STASH_INFO=false
 
   PS1="$user$working_directory"
   PS1+="$(scm_prompt_info)"
