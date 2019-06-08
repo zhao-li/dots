@@ -26,12 +26,12 @@ function set_basic_prompt() {
 }
 
 function set_bash_it_prompt() {
-  user="${purple}\u"
+  user="${cyan}\u"
   working_directory="${green}\w"
 
   SCM_THEME_PROMPT_DIRTY="💩"
   SCM_THEME_PROMPT_CLEAN="🦄"
-  SCM_THEME_PROMPT_PREFIX="${cyan}("
+  SCM_THEME_PROMPT_PREFIX="${purple}("
   SCM_THEME_PROMPT_SUFFIX=")"
   SCM_GIT_SHOW_DETAILS=false
 
