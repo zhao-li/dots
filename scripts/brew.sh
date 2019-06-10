@@ -2,7 +2,7 @@
 
 # This script and its functions supports brew.
 
-function load_brew {
+load_brew() {
   if [ -f "$(brew --prefix)"/etc/bash_completion ]; then
     # shellcheck disable=SC1090
     . "$(brew --prefix)"/etc/bash_completion
@@ -10,13 +10,13 @@ function load_brew {
   export PATH="/usr/local/bin:$PATH"
 }
 
-function install_brew_packages() {
+install_brew_packages() {
   xcode-select --install
   update_brew
   brew bundle
 }
 
-function update_brew() {
+update_brew() {
   brew update
   brew upgrade
   brew cask upgrade

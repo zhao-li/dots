@@ -5,5 +5,5 @@
 
 if [ -f ~/.bashrc ]; then
   # shellcheck disable=SC1090
-  source ~/.bashrc
+  . ~/.bashrc
 fi

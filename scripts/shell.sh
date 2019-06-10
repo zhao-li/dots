@@ -4,7 +4,7 @@
 
 # This function customizes the shell
 # example usage: customize_shell
-function customize_shell {
+customize_shell() {
   set_history_to_be_unique
 }
 
@@ -13,7 +13,7 @@ function customize_shell {
 # after the terminal session ends
 # useful for SSH credentials or getting credentials from Bitwarden
 # example usage: clear_shell_history
-function clear_shell_history {
+clear_shell_history() {
   history -c # clear history
   history -w # write im history from memory to file
 }
@@ -21,6 +21,6 @@ function clear_shell_history {
 # This function sets the shell history to duplicate
 # this makes it easier to scroll through history and get only unique commands
 # example usage: set_history_to_be_unique
-function set_history_to_be_unique {
+set_history_to_be_unique() {
   HISTCONTROL=ignoredups:ignorespace # duplicate commands will not be saved
 }

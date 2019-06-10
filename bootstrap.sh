@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # This script and its functions supports the installing a development environment.
 # run script without sudo: ./install.sh
@@ -7,12 +7,12 @@ project_path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
     
 for file in "$project_path"/scripts/*.sh; do
   # shellcheck disable=SC1090
-  source "$file"
+  . "$file"
 done
 
-set_up_tmux $project_path
-set_up_vim $project_path
-set_up_bash $project_path
+set_up_tmux "$project_path"
+set_up_vim "$project_path"
+set_up_bash "$project_path"
 
 if [ "$(uname)" == "Darwin" ]; then
   echo "doing mac stuff"
