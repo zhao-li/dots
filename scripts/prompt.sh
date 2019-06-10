@@ -42,3 +42,16 @@ set_bash_it_prompt() {
   PS1="$PS1$(scm_prompt_info)"
   PS1="$PS1${reset_color:?}$ "
 }
+
+# This configures the oh-my-zsh prompt
+# https://github.com/robbyrussell/oh-my-zsh/blob/master/custom/themes/example.zsh-theme
+# some prompt settings 
+set_oh_my_zsh_prompt() {
+  local user="%F{cyan}%n"
+  local dir="%F{green}%~%f"
+  local git='$(git_prompt_info)'
+
+  prompt_string="$FG[237]------------------------------------------------------------%{$reset_color%}\n"
+  prompt_string+="${user}${dir}${git}$ "
+  echo $prompt_string
+}
