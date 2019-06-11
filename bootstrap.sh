@@ -13,11 +13,12 @@ done
 set_up_tmux "$project_path"
 set_up_vim "$project_path"
 set_up_bash "$project_path"
+install_bash_it
+install_oh_my_zsh
 set_up_zsh "$project_path"
 
 if [ "$(uname)" == "Darwin" ]; then
   echo "doing mac stuff"
-  install_bash_it
   install_brew_packages
   install_vscode_extensions
   sym_link .bash_profile "$project_path"
