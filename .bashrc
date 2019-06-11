@@ -2,11 +2,6 @@
 
 # This script and its functions configures bash
 
-for file in ~/dots/scripts/*.sh; do # assumes dots repo is child of home directory
-  # shellcheck disable=SC1090
-  source "$file"
-done
-
 run_on_entry() {
   if [ -d "$HOME/.bash_it" ] && [ -f "$HOME/dots/custom/bash-it.sh" ]; then
     . ~/dots/custom/bash-it.sh
