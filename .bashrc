@@ -8,8 +8,10 @@ for file in ~/dots/scripts/*.sh; do # assumes dots repo is child of home directo
 done
 
 run_on_entry() {
+  if [ -d "$HOME/.bash_it" ] && [ -f "$HOME/dots/custom/bash-it.sh" ]; then
+    . ~/dots/custom/bash-it.sh
+  fi
   customize_shell
-  load_bash_it
   load_brew
   clean_docker
   set_up_chruby
