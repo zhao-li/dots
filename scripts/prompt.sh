@@ -19,6 +19,7 @@ set_basic_prompt() {
 
 # This configures the bash-it prompt
 set_bash_it_prompt() {
+  dim="\[\e[38;5;237m\]"
   user="${cyan}\u"
   working_directory="${green}\w"
 
@@ -29,7 +30,7 @@ set_bash_it_prompt() {
   export SCM_GIT_SHOW_DETAILS=false
   export SCM_GIT_SHOW_STASH_INFO=false
 
-  PS1=""
+  PS1=${dim}$'--------------------------------------------------------------------------------\n'
   PS1="$PS1$user$working_directory"
   PS1="$PS1$(scm_prompt_info)"
   PS1="$PS1${reset_color:?}$ "
