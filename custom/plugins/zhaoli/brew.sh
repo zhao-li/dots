@@ -5,8 +5,10 @@
 # Load brew
 # Example usage: load_brew
 load_brew() {
-  about 'load brew'
-  group 'zhaoli'
+  if [ -n "$BASH_VERSION" ]; then
+    about 'load brew'
+    group 'zhaoli'
+  fi
 
   if [ -f "$(brew --prefix)"/etc/bash_completion ]; then
     # shellcheck disable=SC1090
@@ -18,8 +20,10 @@ load_brew() {
 # Install brew packages
 # Example usage: install_brew_packages
 install_brew_packages() {
-  about 'install brew packages'
-  group 'zhaoli'
+  if [ -n "$BASH_VERSION" ]; then
+    about 'install brew packages'
+    group 'zhaoli'
+  fi
 
   xcode-select --install
   update_brew
@@ -29,8 +33,10 @@ install_brew_packages() {
 # Update brew and its packages
 # Example usage: update_brew
 update_brew() {
-  about 'update brew and its packages'
-  group 'zhaoli'
+  if [ -n "$BASH_VERSION" ]; then
+    about 'update brew and its packages'
+    group 'zhaoli'
+  fi
 
   brew update
   brew upgrade

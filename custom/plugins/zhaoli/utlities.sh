@@ -6,8 +6,10 @@
 # project's configuration files
 # example usage: _sym_link .tmux.conf /Users/zli/dots/
 _sym_link() {
-  about 'a convenience method for symlinking configuration files'
-  group 'zhaoli'
+  if [ -n "$BASH_VERSION" ]; then
+    about 'a convenience method for symlinking configuration files'
+    group 'zhaoli'
+  fi
 
   file=$1
   project_path=$2

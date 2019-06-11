@@ -5,8 +5,10 @@
 # This function configures zsh
 # example usage: set_up_zsh /Users/zli/dots/
 set_up_zsh() {
-  about 'set up zsh'
-  group 'zhaoli'
+  if [ -n "$BASH_VERSION" ]; then
+    about 'set up zsh'
+    group 'zhaoli'
+  fi
 
   project_path=$1
   _sym_link .zshrc "$project_path"
@@ -15,8 +17,10 @@ set_up_zsh() {
 # This function installs oh-my-zsh
 # example usage: install_oh_my_zsh
 install_oh_my_zsh() {
-  about 'install oh-my-zsh'
-  group 'zhaoli'
+  if [ -n "$BASH_VERSION" ]; then
+    about 'install oh-my-zsh'
+    group 'zhaoli'
+  fi
 
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh) --unattended"
 }

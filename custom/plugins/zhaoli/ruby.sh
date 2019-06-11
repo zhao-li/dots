@@ -5,8 +5,10 @@
 # Set up chruby
 # Example usage: set_up_chruby
 set_up_chruby() {
-  about 'set up chruby'
-  group 'zhaoli'
+  if [ -n "$BASH_VERSION" ]; then
+    about 'set up chruby'
+    group 'zhaoli'
+  fi
 
   brew_prefix=$(brew --prefix)
   chruby_path=$brew_prefix/opt/chruby/
