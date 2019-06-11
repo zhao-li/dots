@@ -71,6 +71,7 @@ ZSH_CUSTOM=$HOME/dots/custom/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(git)
+plugins=(git-prompt)
 
 source $ZSH/oh-my-zsh.sh
 
