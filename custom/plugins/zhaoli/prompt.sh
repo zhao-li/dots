@@ -3,7 +3,11 @@
 # These functions support configuring the prompt
 
 # This configures the regular shell prompt
+# Example usage: set_basic_prompt
 set_basic_prompt() {
+  about 'set a basic shell prompt'
+  group 'zhaoli'
+
   white="\[\e[00m\]"
   green="\[\e[01;32m\]"
   blue="\[\e[01;34m\]"
@@ -18,7 +22,11 @@ set_basic_prompt() {
 }
 
 # This configures the bash-it prompt
+# Example usage: set_bash_it_prompt
 set_bash_it_prompt() {
+  about 'set a bash-it dependent prompt'
+  group 'zhaoli'
+
   dim="\[\e[38;5;237m\]"
   user="${cyan}\u"
   working_directory="${green}\w"

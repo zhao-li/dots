@@ -8,8 +8,11 @@ for file in ~/dots/scripts/*.sh; do # assumes dots repo is child of home directo
 done
 
 run_on_entry() {
+  if [ -d "$HOME/.oh-my-zsh" ] && [ -f "$HOME/dots/custom/oh-my-zsh.sh" ]; then
+    export ZSH_CUSTOM="$HOME/dots/custom/"
+    . ~/dots/custom/oh-my-zsh.sh
+  fi
   #customize_shell
-  load_oh_my_zsh
   #load_brew
   #clean_docker
   #set_up_chruby

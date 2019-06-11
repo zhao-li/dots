@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # This script and its functions supports wifi.
 # http://swkstudios.com/tutorials/ubuntu/ubuntu-14-04-installing-tp-link-ac1200-t4u/
