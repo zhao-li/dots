@@ -5,8 +5,10 @@
 # This function configures vim
 # example usage: set_up_vim /Users/zli/dots/
 set_up_vim() {
-  about 'set up vim'
-  group 'zhaoli'
+  if [ -n "$BASH_VERSION" ]; then
+    about 'set up vim'
+    group 'zhaoli'
+  fi
 
   project_path=$1
   _sym_link .vimrc "$project_path"

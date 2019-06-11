@@ -5,8 +5,10 @@
 # This function customizes the shell
 # example usage: customize_shell
 customize_shell() {
-  about 'customize shell environment'
-  group 'zhaoli'
+  if [ -n "$BASH_VERSION" ]; then
+    about 'customize shell environment'
+    group 'zhaoli'
+  fi
 
   set_history_to_be_unique
 }
@@ -17,8 +19,10 @@ customize_shell() {
 # useful for SSH credentials or getting credentials from Bitwarden
 # example usage: clear_shell_history
 clear_shell_history() {
-  about 'clear out shell history to avoid logging sensitive credentials'
-  group 'zhaoli'
+  if [ -n "$BASH_VERSION" ]; then
+    about 'clear out shell history to avoid logging sensitive credentials'
+    group 'zhaoli'
+  fi
 
   history -c # clear history
   history -w # write im history from memory to file
@@ -28,8 +32,10 @@ clear_shell_history() {
 # this makes it easier to scroll through history and get only unique commands
 # example usage: set_history_to_be_unique
 set_history_to_be_unique() {
-  about 'allow scrolling through unique previous commands with ↑ key'
-  group 'zhaoli'
+  if [ -n "$BASH_VERSION" ]; then
+    about 'allow scrolling through unique previous commands with ↑ key'
+    group 'zhaoli'
+  fi
 
   HISTCONTROL=ignoredups:ignorespace # duplicate commands will not be saved
 }
