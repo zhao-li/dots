@@ -9,5 +9,5 @@ set_up_tmux() {
   group 'zhaoli'
 
   project_path=$1
-  sym_link .tmux.conf "$project_path"
+  _sym_link .tmux.conf "$project_path"
 }

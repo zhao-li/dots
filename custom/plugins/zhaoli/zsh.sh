@@ -9,7 +9,7 @@ set_up_zsh() {
   group 'zhaoli'
 
   project_path=$1
-  sym_link .zshrc "$project_path"
+  _sym_link .zshrc "$project_path"
 }
 
 # This function installs oh-my-zsh

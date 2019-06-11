@@ -9,8 +9,8 @@ set_up_bash() {
   group 'zhaoli'
 
   project_path=$1
-  sym_link .bashrc "$project_path"
-  sym_link .inputrc "$project_path"
+  _sym_link .bashrc "$project_path"
+  _sym_link .inputrc "$project_path"
 }
 
 # This function installs bash-it
