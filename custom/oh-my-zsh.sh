@@ -73,6 +73,7 @@ ZSH_CUSTOM=$HOME/dots/custom/
 #plugins=(git)
 plugins=(
   git-prompt
+  zhaoli
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
