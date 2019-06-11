@@ -2,7 +2,7 @@
 
 # These functions support configuring bash
 
-# This function configures base
+# This function configures bash
 # example usage: set_up_bash /Users/zli/dots/
 set_up_bash() {
   project_path=$1
@@ -25,5 +25,4 @@ load_bash_it() {
     # shellcheck disable=SC1090
     . ~/dots/custom/bash-it.sh
   fi
-  set_prompt
 }

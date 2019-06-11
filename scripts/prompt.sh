@@ -2,16 +2,7 @@
 
 # These functions support configuring the prompt
 
-# This function sets the prompt
-# example usage: set_prompt
-set_prompt() {
-  if [ -d "$HOME/.bash_it" ] && [ -f "$HOME/dots/custom/bash-it.sh" ]; then
-    set_bash_it_prompt
-  else
-    set_basic_prompt
-  fi
-}
-
+# This configures the regular shell prompt
 set_basic_prompt() {
   white="\[\e[00m\]"
   green="\[\e[01;32m\]"
@@ -26,6 +17,7 @@ set_basic_prompt() {
   PS1="$PS1$white$ "
 }
 
+# This configures the bash-it prompt
 set_bash_it_prompt() {
   user="${cyan}\u"
   working_directory="${green}\w"

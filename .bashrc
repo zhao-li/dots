@@ -7,7 +7,7 @@ for file in ~/dots/scripts/*.sh; do # assumes dots repo is child of home directo
   source "$file"
 done
 
-function run_on_entry {
+run_on_entry() {
   customize_shell
   load_bash_it
   load_brew
@@ -15,7 +15,7 @@ function run_on_entry {
   set_up_chruby
 }
 
-function run_on_exit {
+run_on_exit() {
   clear_shell_history
 }
 
