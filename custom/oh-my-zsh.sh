@@ -74,6 +74,7 @@ ZSH_CUSTOM=$HOME/dots/custom/
 plugins=(
   git-prompt
   zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
