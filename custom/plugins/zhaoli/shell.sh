@@ -19,13 +19,15 @@ customize_shell() {
 # useful for SSH credentials or getting credentials from Bitwarden
 # example usage: clear_shell_history
 clear_shell_history() {
-  if [ -n "$BASH_VERSION" ]; then
+  if [ -n "$ZSH_VERSION" ]; then
+    rm $HISTFILE
+  elif [ -n "$BASH_VERSION" ]; then
     about 'clear out shell history to avoid logging sensitive credentials'
     group 'zhaoli'
-  fi
 
-  history -c # clear history
-  history -w # write im history from memory to file
+    history -c # clear history
+    history -w # write im history from memory to file
+  fi
 }
 
 # This function sets the shell history to duplicate

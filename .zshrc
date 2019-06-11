@@ -7,14 +7,11 @@ run_on_entry() {
     export ZSH_CUSTOM="$HOME/dots/custom/"
     . ~/dots/custom/oh-my-zsh.sh
   fi
-  #customize_shell
-  #load_brew
-  #clean_docker
-  #set_up_chruby
+  clean_docker
 }
 
 run_on_exit() {
-  #clear_shell_history
+  clear_shell_history
 }
 
 run_on_entry

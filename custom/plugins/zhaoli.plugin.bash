@@ -1,3 +1,7 @@
+#!/bin/sh
+
+# This script loads the custom bash-it plugin
+
 cite about-plugin
 about-plugin "Helper functions for Zhao Li's typical workflow"
 

@@ -10,10 +10,6 @@ load_brew() {
     group 'zhaoli'
   fi
 
-  if [ -f "$(brew --prefix)"/etc/bash_completion ]; then
-    # shellcheck disable=SC1090
-    . "$(brew --prefix)"/etc/bash_completion
-  fi
   export PATH="/usr/local/bin:$PATH"
 }
 
