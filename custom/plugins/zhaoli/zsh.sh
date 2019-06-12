@@ -5,7 +5,7 @@
 # This function configures zsh
 # example usage: set_up_zsh /Users/zli/dots/
 set_up_zsh() {
-  if [ -n "$BASH_VERSION" ]; then
+  if _bash_it_running; then
     about 'set up zsh'
     group 'zhaoli'
   fi
@@ -17,7 +17,7 @@ set_up_zsh() {
 # This function installs oh-my-zsh
 # example usage: install_oh_my_zsh
 install_oh_my_zsh() {
-  if [ -n "$BASH_VERSION" ]; then
+  if _bash_it_running; then
     about 'install oh-my-zsh'
     group 'zhaoli'
   fi

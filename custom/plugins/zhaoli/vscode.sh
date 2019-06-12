@@ -5,7 +5,7 @@
 # Install VSCode extensions
 # Example usage: load_brew
 function install_vscode_extensions() {
-  if [ -n "$BASH_VERSION" ]; then
+  if _bash_it_running; then
     about 'install VSCode extensions'
     group 'zhaoli'
   fi

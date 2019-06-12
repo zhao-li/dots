@@ -5,7 +5,7 @@
 # This configures the regular shell prompt
 # Example usage: set_basic_prompt
 set_basic_prompt() {
-  if [ -n "$BASH_VERSION" ]; then
+  if _bash_it_running; then
     about 'set a basic shell prompt'
     group 'zhaoli'
   fi
@@ -26,7 +26,7 @@ set_basic_prompt() {
 # This configures the bash-it prompt
 # Example usage: set_bash_it_prompt
 set_bash_it_prompt() {
-  if [ -n "$BASH_VERSION" ]; then
+  if _bash_it_running; then
     about 'set a bash-it dependent prompt'
     group 'zhaoli'
   fi

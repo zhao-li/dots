@@ -5,7 +5,7 @@
 # Lints the project for community known errors
 # Example usage: lint_project
 function lint_project {
-  if [ -n "$BASH_VERSION" ]; then
+  if _bash_it_running; then
     about 'lint dots project for community known errors'
     group 'zhaoli'
   fi

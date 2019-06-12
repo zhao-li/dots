@@ -6,7 +6,7 @@
 # project's configuration files
 # example usage: _sym_link .tmux.conf /Users/zli/dots/
 _sym_link() {
-  if [ -n "$BASH_VERSION" ]; then
+  if _bash_it_running; then
     about 'a convenience method for symlinking configuration files'
     group 'zhaoli'
   fi
@@ -14,4 +14,20 @@ _sym_link() {
   file=$1
   project_path=$2
   ln -sf "$project_path"/"$file" ~/"$file"
+}
+
+# This function checks if bash-it is running
+# example usage:
+# if _bash_it_running; then
+#   echo "do bash-it stuff"
+# fi
+_bash_it_running() {
+  true=0
+  false=1
+  if [ -n "$(type -t bash-it)" ]; then
+    running=$true
+  else
+    running=$false
+  fi
+  return $running
 }

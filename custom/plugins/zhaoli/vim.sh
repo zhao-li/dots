@@ -5,7 +5,7 @@
 # This function configures vim
 # example usage: set_up_vim /Users/zli/dots/
 set_up_vim() {
-  if [ -n "$BASH_VERSION" ]; then
+  if _bash_it_running; then
     about 'set up vim'
     group 'zhaoli'
   fi

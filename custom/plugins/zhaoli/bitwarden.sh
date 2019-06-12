@@ -6,7 +6,7 @@
 # Example usage:
 # get_password alumni.usc google h@4H
 function get_password {
-  if [ -n "$BASH_VERSION" ]; then
+  if _bash_it_running; then
     about 'gets password from Bitwarden'
     group 'zhaoli'
   fi

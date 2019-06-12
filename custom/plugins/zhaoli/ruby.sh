@@ -5,7 +5,7 @@
 # Set up chruby
 # Example usage: set_up_chruby
 set_up_chruby() {
-  if [ -n "$BASH_VERSION" ]; then
+  if _bash_it_running; then
     about 'set up chruby'
     group 'zhaoli'
   fi

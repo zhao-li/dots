@@ -5,7 +5,7 @@
 # Load brew
 # Example usage: load_brew
 load_brew() {
-  if [ -n "$BASH_VERSION" ]; then
+  if _bash_it_running; then
     about 'load brew'
     group 'zhaoli'
   fi
@@ -16,7 +16,7 @@ load_brew() {
 # Install brew packages
 # Example usage: install_brew_packages
 install_brew_packages() {
-  if [ -n "$BASH_VERSION" ]; then
+  if _bash_it_running; then
     about 'install brew packages'
     group 'zhaoli'
   fi
@@ -29,7 +29,7 @@ install_brew_packages() {
 # Update brew and its packages
 # Example usage: update_brew
 update_brew() {
-  if [ -n "$BASH_VERSION" ]; then
+  if _bash_it_running; then
     about 'update brew and its packages'
     group 'zhaoli'
   fi

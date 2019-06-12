@@ -6,7 +6,7 @@
 # remove unnecessary artifacts
 # Example usage: clean_docker
 function clean_docker {
-  if [ -n "$BASH_VERSION" ]; then
+  if _bash_it_running; then
     about 'clean out docker by removing unnecessary artifacts'
     group 'zhaoli'
   fi
