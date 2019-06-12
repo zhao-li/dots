@@ -5,7 +5,7 @@
 # This function gets a password from Bitwarden
 # Example usage:
 # get_password alumni.usc google h@4H
-function get_password {
+get_password() {
   if _bash_it_running; then
     about 'gets password from Bitwarden'
     group 'zhaoli'

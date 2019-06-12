@@ -5,7 +5,7 @@
 # Clean out docker
 # remove unnecessary artifacts
 # Example usage: clean_docker
-function clean_docker {
+clean_docker() {
   if _bash_it_running; then
     about 'clean out docker by removing unnecessary artifacts'
     group 'zhaoli'

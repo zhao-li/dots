@@ -20,7 +20,7 @@ customize_shell() {
 # example usage: clear_shell_history
 clear_shell_history() {
   if [ -n "$ZSH_VERSION" ]; then
-    rm $HISTFILE
+    rm "$HISTFILE"
   elif [ -n "$BASH_VERSION" ]; then
     if _bash_it_running; then
       about 'clear out shell history to avoid logging sensitive credentials'

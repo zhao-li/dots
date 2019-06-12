@@ -1,10 +1,11 @@
-#!/bin/bash
+#!/bin/sh
 
 # This script and its functions configures bash
 
 run_on_entry() {
   if [ -d "$HOME/.bash_it" ] && [ -f "$HOME/dots/custom/bash-it.sh" ]; then
-    . ~/dots/custom/bash-it.sh
+    # shellcheck disable=SC1090
+    . "$HOME/dots/custom/bash-it.sh"
   fi
   customize_shell
   load_brew

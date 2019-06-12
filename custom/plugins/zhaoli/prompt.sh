@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # These functions support configuring the prompt
 
