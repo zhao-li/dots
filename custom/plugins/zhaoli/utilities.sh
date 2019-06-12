@@ -24,10 +24,14 @@ _sym_link() {
 _bash_it_running() {
   true=0
   false=1
-  if [ -n "$(type -t bash-it)" ]; then
-    running=$true
-  else
-    running=$false
+  if [ -n "$ZSH_VERSION" ]; then
+      running=$false
+  elif [ -n "$BASH_VERSION" ]; then
+    if [ -n "$(type -t bash-it)" ]; then
+      running=$true
+    else
+      running=$false
+    fi
   fi
   return $running
 }
