@@ -26,3 +26,13 @@ install_bash_it() {
   git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
   ~/.bash_it/install.sh --no-modify-config
 }
+
+# This function sets up bash-it
+# example usage: set_up_bash_it
+set_up_bash_it() {
+  if [ -n "$BASH_VERSION" ]; then
+    about 'sets up bash-it'
+    group 'zhaoli'
+  fi
+  bash-it enable completion git
+}

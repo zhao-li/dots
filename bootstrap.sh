@@ -34,3 +34,6 @@ elif [ "$(substr "$(uname -s)" 1 5)" == "Linux" ]; then
 elif [ "$(substr "$(uname -s)" 1 10)" == "MINGW32_NT" ]; then
   echo "doing microsoft stuff"
 fi
+
+echo "run these manually to complete set up:"
+echo "set_up_bash_it"
