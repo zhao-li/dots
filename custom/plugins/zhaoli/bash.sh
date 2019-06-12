@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # These functions support configuring bash
 
@@ -35,5 +35,18 @@ set_up_bash_it() {
     group 'zhaoli'
   fi
 
-  bash-it enable completion git
+  completions=(
+    awscli
+    brew
+    docker-compose
+    git
+    kubectl
+    ssh
+    terraform
+    tmux
+  )
+
+  for completion in "${completions[@]}"; do
+    bash-it enable completion "$completion"
+  done
 }
