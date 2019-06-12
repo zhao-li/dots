@@ -5,7 +5,7 @@
 
 project_path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
     
-for file in "$project_path"/scripts/*.sh; do
+for file in "$project_path"/custom/plugins/zhaoli/*.sh; do
   # shellcheck disable=SC1090
   . "$file"
 done
@@ -21,7 +21,7 @@ if [ "$(uname)" == "Darwin" ]; then
   echo "doing mac stuff"
   install_brew_packages
   install_vscode_extensions
-  sym_link .bash_profile "$project_path"
+  _sym_link .bash_profile "$project_path"
 elif [ "$(substr "$(uname -s)" 1 5)" == "Linux" ]; then
   echo "doing ubuntu stuff"
   sudo apt-get update && apt-get install -y \
