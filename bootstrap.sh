@@ -11,6 +11,7 @@ for file in "$project_path"/custom/plugins/zhaoli/*.sh; do
 done
 
 set_up_tmux "$project_path"
+set_up_hyper "$project_path"
 set_up_vim "$project_path"
 set_up_bash "$project_path"
 install_bash_it
