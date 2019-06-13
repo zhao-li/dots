@@ -40,6 +40,7 @@ git_info() {
 PROMPT=$'$FG[237]-------------------------------------------------------------------------------%{$reset_color%}\n'
 PROMPT+="${user}"
 PROMPT+="${dir}"
-PROMPT+='$(git_info)'
-PROMPT+='${reset_color}$ '
+PROMPT+='%{$(git_info)%}'
+PROMPT+='%{${reset_color}%}$ '
+
 RPROMPT=''
