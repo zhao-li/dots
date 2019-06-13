@@ -151,6 +151,7 @@ module.exports = {
     'hyperfullscreen',
     'hyperline',
     'hyper-pane',
+    'hyperpower',
     'hyper-search',
     'hyper-solarized-dark',
   ],
