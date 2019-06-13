@@ -24,3 +24,15 @@ install_oh_my_zsh() {
 
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh) --unattended"
 }
+
+# This function configures zsh-autosuggestion
+# example usage: configures_autosuggestion
+configure_autosuggestion() {
+  if _bash_it_running; then
+    about 'set up '
+    group 'zhaoli'
+  fi
+
+  export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=65" # ensures zsh-autosuggestion text show up when using solarized theme
+  # 65 is equivalent to solarized theme's base1 content tone
+}

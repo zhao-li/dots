@@ -8,6 +8,7 @@ run_on_entry() {
     . ~/dots/custom/oh-my-zsh.sh
   fi
   clean_docker
+  configure_autosuggestion
 }
 
 run_on_exit() {
