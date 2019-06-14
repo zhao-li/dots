@@ -3,7 +3,7 @@
 # These functions support configuring tmux
 
 # This function configures tmux
-# example usage: set_up_tmux /Users/zli/dots/
+# example usage: set_up_tmux /Users/zhaoli/dots/
 set_up_tmux() {
   if _bash_it_running; then
     about 'configures tmux'

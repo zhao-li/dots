@@ -3,7 +3,7 @@
 # These functions support configuring bash
 
 # This function configures zsh
-# example usage: set_up_zsh /Users/zli/dots/
+# example usage: set_up_zsh /Users/zhaoli/dots/
 set_up_zsh() {
   if _bash_it_running; then
     about 'set up zsh'

@@ -3,7 +3,7 @@
 # These functions support configuring bash
 
 # This function configures bash
-# example usage: set_up_bash /Users/zli/dots/
+# example usage: set_up_bash /Users/zhaoli/dots/
 set_up_bash() {
   if _bash_it_running; then
     about 'sets up bash'

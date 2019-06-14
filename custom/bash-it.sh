@@ -9,7 +9,7 @@ case $- in
 esac
 
 # Path to the bash it configuration
-export BASH_IT="/Users/zli/.bash_it"
+export BASH_IT="$HOME/.bash_it"
 export BASH_IT_CUSTOM="$HOME/dots/custom/"
 
 # Lock and Load a custom theme file.

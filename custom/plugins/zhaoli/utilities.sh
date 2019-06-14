@@ -4,7 +4,7 @@
 
 # This function creates a symlink between the current user's configuration files and this
 # project's configuration files
-# example usage: _sym_link .tmux.conf /Users/zli/dots/
+# example usage: _sym_link .tmux.conf /Users/zhaoli/dots/
 _sym_link() {
   if _bash_it_running; then
     about 'a convenience method for symlinking configuration files'

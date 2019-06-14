@@ -3,7 +3,7 @@
 # These functions support configuring hyper
 
 # This function configures hyper
-# example usage: set_up_hyper /Users/zli/dots/
+# example usage: set_up_hyper /Users/zhaoli/dots/
 set_up_hyper() {
   if _bash_it_running; then
     about 'configures hyper'

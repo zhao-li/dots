@@ -3,7 +3,7 @@
 # These functions support configuring vim
 
 # This function configures vim
-# example usage: set_up_vim /Users/zli/dots/
+# example usage: set_up_vim /Users/zhaoli/dots/
 set_up_vim() {
   if _bash_it_running; then
     about 'set up vim'
