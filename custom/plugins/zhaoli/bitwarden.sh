@@ -15,17 +15,28 @@ get_password() {
   site=$2
   session_hash=$3
 
-  jq_expression=".[].login |" # select logins that ->
-  jq_expression="$jq_expression select(.uris[]?.uri |" # has uris with an uri that ->
-  jq_expression="$jq_expression contains(\"$site\")) |" # contains the $site
-                                                        # substring and then ->
-  jq_expression="$jq_expression \"\(.password)" # display the password with ->
-  jq_expression="$jq_expression 🔑"
-  jq_expression="$jq_expression \(.uris[0].uri)" # the uri with ->
-  jq_expression="$jq_expression (\(.username))\"" # associated username
-
   bw list items \
     --session "$session_hash" \
     --search "$username" \
-      | jq "$jq_expression"
+      | jq "$(_get_expression $username $site)"
+}
+
+
+# This function gets an expression to filter the list of items
+# Example usage:
+# _get_expression alumni.usc google h@4H
+_get_expression() {
+  username=$1
+  site=$2
+
+  expression=".[].login |" # select logins that ->
+  expression="$expression select(.uris[]?.uri |" # has uris with an uri that ->
+  expression="$expression contains(\"$site\")) |" # contains the $site
+                                                  # substring and then ->
+  expression="$expression \"\(.password)" # display the password with ->
+  expression="$expression 🔑"
+  expression="$expression \(.uris[0].uri)" # the uri with ->
+  expression="$expression (\(.username))\"" # associated username
+
+  echo "$expression"
 }
