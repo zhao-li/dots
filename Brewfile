@@ -15,6 +15,7 @@ brew "zsh"
 cask "adobe-acrobat-reader"
 cask "authy"
 cask "bitwarden"
+cask "brave-browser"
 cask "eloston-chromium"
 cask "displaylink"
 cask "docker"
@@ -30,6 +31,7 @@ cask "spectacle"
 cask "tor-browser"
 cask "thinkorswim"
 cask "visual-studio-code"
+cask "vivaldi"
 
 mas "evernote", id: 406056744
 mas "onedrive", id: 823766827
