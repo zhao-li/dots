@@ -29,15 +29,26 @@ _get_expression() {
   username=$1
   site=$2
 
-  expression=".[].login |" # find logins that ->
-  expression="$expression select(" # has ->
-  expression="$expression (.uris[]?.uri | contains(\"$site\")) and " # uri container $site and
-  expression="$expression (.username | contains(\"$username\"))) |" # username containing $username
-  # and then display the login's  ->
-  expression="$expression \"\(.password)" # password with ->
-  expression="$expression 🔑"
-  expression="$expression \(.uris[0].uri)" # uri with ->
-  expression="$expression (\(.username))\"" # associated username
+  find_logins=".[].login | "
+  that_has="select("
+  uri_containing_site="(.uris[]?.uri | contains(\"$site\"))"
+  and="and"
+  desired_username="(.username | contains(\"$username\"))) | "
+  then_display_matching_login=""
+  password="\"\(.password)"
+  sugar="🔑"
+  uri="\(.uris[0].uri)"
+  associated_username="(\(.username))\""
 
-  echo "$expression"
+  printf "%s" \
+    "$find_logins" \
+    "$that_has" \
+    "$uri_containing_site" \
+    "$and" \
+    "$desired_username" \
+    "$then_display_matching_login" \
+    "$password" \
+    "$sugar" \
+    "$uri" \
+    "$associated_username"
 }
