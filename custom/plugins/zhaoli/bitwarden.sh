@@ -29,13 +29,14 @@ _get_expression() {
   username=$1
   site=$2
 
-  expression=".[].login |" # select logins that ->
-  expression="$expression select(.uris[]?.uri |" # has uris with an uri that ->
-  expression="$expression contains(\"$site\")) |" # contains the $site
-                                                  # substring and then ->
-  expression="$expression \"\(.password)" # display the password with ->
+  expression=".[].login |" # find logins that ->
+  expression="$expression select(" # has ->
+  expression="$expression (.uris[]?.uri | contains(\"$site\")) and " # uri container $site and
+  expression="$expression (.username | contains(\"$username\"))) |" # username containing $username
+  # and then display the login's  ->
+  expression="$expression \"\(.password)" # password with ->
   expression="$expression 🔑"
-  expression="$expression \(.uris[0].uri)" # the uri with ->
+  expression="$expression \(.uris[0].uri)" # uri with ->
   expression="$expression (\(.username))\"" # associated username
 
   echo "$expression"
