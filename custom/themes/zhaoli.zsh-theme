@@ -8,10 +8,16 @@ color='%F{magenta}'
 ZSH_THEME_GIT_PROMPT_PREFIX='('
 ZSH_THEME_GIT_PROMPT_SUFFIX=')'
 ZSH_THEME_GIT_PROMPT_BRANCH=''
-ZSH_THEME_GIT_PROMPT_DIRTY='%{%G💩%}'
-ZSH_THEME_GIT_PROMPT_CLEAN='%{%G🦄%}'
 ZSH_THEME_GIT_PROMPT_AHEAD='↑'
 ZSH_THEME_GIT_PROMPT_BEHIND='↓'
+
+if [[ $TERM_PROGRAM == 'Hyper' ]]; then
+  ZSH_THEME_GIT_PROMPT_DIRTY='%{%G💩%}'
+  ZSH_THEME_GIT_PROMPT_CLEAN='%{%G🦄%}'
+else
+  ZSH_THEME_GIT_PROMPT_DIRTY='💩'
+  ZSH_THEME_GIT_PROMPT_CLEAN='🦄'
+fi
 
 local user="%F{cyan}%n"
 local dir="%F{green}%~%f"
