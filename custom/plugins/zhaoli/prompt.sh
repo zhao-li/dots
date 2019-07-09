@@ -39,6 +39,7 @@ set_bash_it_prompt() {
   export SCM_THEME_PROMPT_CLEAN="🦄"
   export SCM_THEME_PROMPT_PREFIX="${purple:?}("
   export SCM_THEME_PROMPT_SUFFIX=")"
+  export SCM_GIT_AHEAD_BEHIND_PREFIX_CHAR=''
   export SCM_GIT_SHOW_DETAILS=false
   export SCM_GIT_SHOW_STASH_INFO=false
 
