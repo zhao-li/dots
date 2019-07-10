@@ -35,14 +35,15 @@ set_bash_it_prompt() {
   user="${cyan}\u"
   working_directory="${green}\w"
 
+  export SCM_GIT_SHOW_DETAILS=false
+  export SCM_GIT_SHOW_REMOTE_INFO=false
+  export SCM_GIT_SHOW_STASH_INFO=false
+
   export SCM_THEME_PROMPT_DIRTY="💩"
   export SCM_THEME_PROMPT_CLEAN="🦄"
   export SCM_THEME_PROMPT_PREFIX="${purple:?}("
   export SCM_THEME_PROMPT_SUFFIX=")"
   export SCM_GIT_AHEAD_BEHIND_PREFIX_CHAR=''
-  export SCM_GIT_SHOW_DETAILS=false
-  export SCM_GIT_SHOW_REMOTE_INFO=false
-  export SCM_GIT_SHOW_STASH_INFO=false
 
   PS1=${dim}$'--------------------------------------------------------------------------------\n'
   PS1="$PS1$user$working_directory"
