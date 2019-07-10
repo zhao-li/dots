@@ -41,6 +41,7 @@ set_bash_it_prompt() {
   export SCM_THEME_PROMPT_SUFFIX=")"
   export SCM_GIT_AHEAD_BEHIND_PREFIX_CHAR=''
   export SCM_GIT_SHOW_DETAILS=false
+  export SCM_GIT_SHOW_REMOTE_INFO=false
   export SCM_GIT_SHOW_STASH_INFO=false
 
   PS1=${dim}$'--------------------------------------------------------------------------------\n'
