@@ -18,12 +18,12 @@ install_bash_it
 install_oh_my_zsh
 set_up_zsh "$project_path"
 
-if [ "$(uname)" == "Darwin" ]; then
+if _macos; then
   echo "doing mac stuff"
   install_brew_packages
   install_vscode_extensions
   _sym_link .bash_profile "$project_path"
-elif [ "$(substr "$(uname -s)" 1 5)" == "Linux" ]; then
+elif _linux; then
   echo "doing ubuntu stuff"
   sudo apt-get update && apt-get install -y \
     git \
@@ -32,7 +32,7 @@ elif [ "$(substr "$(uname -s)" 1 5)" == "Linux" ]; then
     tmux \
     vim \
     vim-gnome
-elif [ "$(substr "$(uname -s)" 1 10)" == "MINGW32_NT" ]; then
+elif _windows; then
   echo "doing microsoft stuff"
 fi
 
