@@ -18,7 +18,7 @@ get_password() {
   bw list items \
     --session "$session_hash" \
     --search "$username" \
-      | jq "$(_get_expression $username $site)"
+      | jq "$(_get_expression "$username" "$site")"
 }
 
 
