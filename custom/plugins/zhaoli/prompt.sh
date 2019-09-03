@@ -38,6 +38,7 @@ set_bash_it_prompt() {
   export SCM_GIT_SHOW_DETAILS=false
   export SCM_GIT_SHOW_REMOTE_INFO=false
   export SCM_GIT_SHOW_STASH_INFO=false
+  export SCM_GIT_SHOW_COMMIT_COUNT=false
 
   export SCM_THEME_PROMPT_DIRTY="💩"
   export SCM_THEME_PROMPT_CLEAN="🦄"
