@@ -34,3 +34,4 @@ cask "vivaldi"
 
 mas "evernote", id: 406056744
 mas "onedrive", id: 823766827
+mas "Microsoft Remote Desktop", id: 1295203466
