@@ -1,6 +1,3 @@
-tap "homebrew/bundle"
-tap "homebrew/core"
-
 brew "bitwarden-cli"
 brew "git"
 brew "jq"
