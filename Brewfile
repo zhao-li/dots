@@ -32,6 +32,11 @@ cask "thinkorswim"
 cask "visual-studio-code"
 cask "vivaldi"
 
-mas "evernote", id: 406056744
-mas "onedrive", id: 823766827
+mas "Banktivity", id: 1192921778
+mas "Evernote", id: 406056744
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Kindle", id: 405399194
 mas "Microsoft Remote Desktop", id: 1295203466
+mas "Mini Calendar", id: 1088779979
+mas "OneDrive", id: 823766827
