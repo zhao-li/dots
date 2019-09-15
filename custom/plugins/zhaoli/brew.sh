@@ -2,6 +2,19 @@
 
 # This script and its functions supports brew.
 
+# install brew
+# Example usage: load_brew
+install_brew() {
+  if _bash_it_running; then
+    about 'install brew'
+    group 'zhaoli'
+  fi
+
+  /usr/bin/ruby \
+    -e \
+    "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+}
+
 # Load brew
 # Example usage: load_brew
 load_brew() {

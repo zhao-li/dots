@@ -20,6 +20,7 @@ set_up_zsh "$project_path"
 
 if _macos; then
   echo "doing mac stuff"
+  install_brew
   install_brew_packages
   install_vscode_extensions
   _sym_link .bash_profile "$project_path"
