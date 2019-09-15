@@ -24,7 +24,7 @@ _sym_link() {
 _macos() {
   true=0
   false=1
-  running=$false
+  local running=$false
   if [ "$(uname)" = "Darwin" ]; then
     running=$true
   fi
@@ -39,7 +39,7 @@ _macos() {
 _linux() {
   true=0
   false=1
-  running=$false
+  local running=$false
   if [ "$(substr "$(uname -s)" 1 5)" = "Linux" ]; then
     running=$true
   fi
@@ -54,7 +54,7 @@ _linux() {
 _windows() {
   true=0
   false=1
-  running=$false
+  local running=$false
   if [ "$(substr "$(uname -s)" 1 10)" = "MINGW32_NT" ]; then
     running=$true
   fi
@@ -69,7 +69,7 @@ _windows() {
 _bash_running() {
   true=0
   false=1
-  running=$false
+  local running=$false
   if [ -n "$BASH_VERSION" ]; then
     running=$true
   fi
@@ -84,7 +84,7 @@ _bash_running() {
 _zsh_running() {
   true=0
   false=1
-  running=$false
+  local running=$false
   if [ -n "$ZSH_VERSION" ]; then
     running=$true
   fi
@@ -99,7 +99,7 @@ _zsh_running() {
 _bash_it_running() {
   true=0
   false=1
-  running=$false
+  local running=$false
   if _bash_running; then
     if [ -n "$(type -t bash-it)" ]; then
       running=$true
@@ -116,7 +116,7 @@ _bash_it_running() {
 _oh_my_zsh_running() {
   true=0
   false=1
-  running=$false
+  local running=$false
   if _zsh_running; then
     if [ -n "$(whence upgrade_oh_my_zsh)" ]; then
       running=$true
