@@ -1,3 +1,8 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers" # remove when possible; required for displaylink
+tap "homebrew/core"
+
 brew "bitwarden-cli"
 brew "git"
 brew "jq"
