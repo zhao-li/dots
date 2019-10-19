@@ -149,6 +149,11 @@ module.exports = {
         "network",
       ]
     },
+
+    hyperSpotify: {
+      controlsPosition: 'right',
+      margin: '21',
+    },
   },
 
   // a list of plugins to fetch and install from npm
@@ -164,6 +169,7 @@ module.exports = {
     'hyper-pane',
     'hyperpower',
     'hyper-search',
+    'hyper-spotify',
     'hyper-solarized-dark',
   ],
 
