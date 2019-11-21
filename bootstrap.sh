@@ -17,6 +17,7 @@ set_up_bash "$project_path"
 install_bash_it
 install_oh_my_zsh
 set_up_zsh "$project_path"
+set_up_vscode "$project_path"
 
 if _macos; then
   echo "doing mac stuff"

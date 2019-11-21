@@ -1,0 +1,6 @@
+{
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2,
+    "liveshare.featureSet": "stable",
+    "workbench.startupEditor": "newUntitledFile"
+}
