@@ -10,13 +10,13 @@ for file in "$project_path"/custom/plugins/zhaoli/*.sh; do
   . "$file"
 done
 
-set_up_tmux "$project_path"
-set_up_hyper "$project_path"
-set_up_vim "$project_path"
-set_up_bash "$project_path"
 install_bash_it
 install_oh_my_zsh
+set_up_bash "$project_path"
 set_up_zsh "$project_path"
+set_up_vim "$project_path"
+set_up_tmux "$project_path"
+set_up_hyper "$project_path"
 set_up_vscode "$project_path"
 
 if _macos; then
