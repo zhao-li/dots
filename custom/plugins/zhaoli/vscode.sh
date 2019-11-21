@@ -28,5 +28,6 @@ install_vscode_extensions() {
 
   code \
     --install-extension ms-vsliveshare.vsliveshare \
+    --install-extension ms-vsliveshare.vsliveshare-pack \
     --install-extension vscodevim.vim
 }
