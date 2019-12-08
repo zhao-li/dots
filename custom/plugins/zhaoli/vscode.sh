@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# This script installs VS Code extensions
+# These functions support VS Code
 
 # This function configures VS Code
 # example usage: set_up_vscode /Users/zhaoli/dots/

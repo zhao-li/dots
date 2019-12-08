@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# These functions support configuring tmux
+# These functions support tmux
 
 # This function configures tmux
 # example usage: set_up_tmux /Users/zhaoli/dots/
