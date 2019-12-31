@@ -27,6 +27,7 @@ install_vscode_extensions() {
   fi
 
   code \
+    --install-extension eamodio.gitlens \
     --install-extension ms-vsliveshare.vsliveshare \
     --install-extension ms-vsliveshare.vsliveshare-pack \
     --install-extension vscodevim.vim
