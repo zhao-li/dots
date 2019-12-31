@@ -28,6 +28,7 @@ install_vscode_extensions() {
 
   code \
     --install-extension donjayamanne.githistory \
+    --install-extension eamodio.gitlens \
     --install-extension karigari.chat \
     --install-extension ms-vsliveshare.vsliveshare \
     --install-extension ms-vsliveshare.vsliveshare-audio \
