@@ -33,6 +33,7 @@ mas "Banktivity", id: 1192921778
 mas "Evernote", id: 406056744
 mas "iMovie", id: 408981434
 mas "Kindle", id: 405399194
+mas "MagicCopy", id: 1434526691
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Mini Calendar", id: 1088779979
 mas "OneDrive", id: 823766827
