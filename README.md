@@ -28,5 +28,5 @@ To convert to gif:
 
     $ docker run --rm -v $PWD:/data asciinema/asciicast2gif \
       -t solarized-light \
-      https://asciinema.org/a/r2Le5TNhITZjmsoK7fuCBTMS7.cast \
+      tutorial.cast \
       hosted.gif
