@@ -10,3 +10,23 @@ Linting
 To lint shell scripts:
 
     $ lint_project
+
+Using asciinema
+---------------
+To record:
+
+    $ asciinema rec tutorial.cast
+    $ exit
+
+Edit `tutorial.cast` and update width to 100 and height to 25.
+
+Upload `tutorial.cast` file to asciinema.org:
+
+    $ asciinema upload tutorial.cast
+
+To convert to gif:
+
+    $ docker run --rm -v $PWD:/data asciinema/asciicast2gif \
+      -t solarized-light \
+      https://asciinema.org/a/r2Le5TNhITZjmsoK7fuCBTMS7.cast \
+      hosted.gif
