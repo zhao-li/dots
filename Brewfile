@@ -3,6 +3,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-drivers" # remove when possible; required for displaylink
 tap "homebrew/core"
 
+brew "asciinema"
 brew "bitwarden-cli"
 brew "git"
 brew "jq"
