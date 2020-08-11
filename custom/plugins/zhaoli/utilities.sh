@@ -132,7 +132,7 @@ update() {
     bash-it update
   fi
   if _zsh_running; then
-    upgrade_oh_my_zsh
+    omz update
   fi
   if _macos; then
     update_brew
