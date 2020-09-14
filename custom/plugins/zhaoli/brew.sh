@@ -49,7 +49,7 @@ update_brew() {
 
   brew update
   brew upgrade
-  brew cask upgrade
+  brew upgrade --cask
   mas upgrade
   brew doctor
 }
