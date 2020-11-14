@@ -48,8 +48,8 @@ update_brew() {
   fi
 
   brew update
-  brew upgrade
-  brew upgrade --cask
+  brew upgrade --greedy
   mas upgrade
+  brew cleanup
   brew doctor
 }
