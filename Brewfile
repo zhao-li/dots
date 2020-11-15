@@ -25,7 +25,6 @@ cask "rowanj-gitx"
 cask "signal"
 cask "sonos"
 cask "spectacle"
-cask "thinkorswim"
 cask "visual-studio-code"
 cask "vivaldi"
 
