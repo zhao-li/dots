@@ -12,13 +12,7 @@ done
 
 install_bash_it
 install_oh_my_zsh
-set_up_bash "$project_path"
-set_up_zsh "$project_path"
-set_up_git "$project_path"
-set_up_vim "$project_path"
-set_up_tmux "$project_path"
-set_up_hyper "$project_path"
-set_up_vscode "$project_path"
+"$project_path"/scripts/set_up.sh "$project_path"
 
 if _macos; then
   echo "doing mac stuff"
