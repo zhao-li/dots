@@ -18,3 +18,12 @@ set_up_tmux "$project_path"
 set_up_hyper "$project_path"
 set_up_vscode "$project_path"
 
+if _macos; then
+  echo "doing mac stuff"
+  _sym_link .bash_profile "$project_path"
+elif _linux; then
+  echo "doing ubuntu stuff"
+elif _windows; then
+  echo "doing microsoft stuff"
+fi
+

@@ -19,7 +19,6 @@ if _macos; then
   install_brew
   install_brew_packages
   install_vscode_extensions
-  _sym_link .bash_profile "$project_path"
 elif _linux; then
   echo "doing ubuntu stuff"
   sudo apt-get update && apt-get install -y \
