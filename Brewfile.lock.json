@@ -5,13 +5,13 @@
         "revision": "573e7d8965fc1557d0774497cf5c0180e6ff3f98"
       },
       "homebrew/cask": {
-        "revision": "257e7dcf0b5ca277f7343bd197ca55f9c0e4af05"
+        "revision": "5ecb7c7e11b1b90d08cafabeca82976e32af2305"
       },
       "homebrew/cask-drivers": {
         "revision": "66e809605134e3c6d4e745b4eba3cc6039a3df8f"
       },
       "homebrew/core": {
-        "revision": "d3816039ca9d32e9b0a96dcd39acaf9a43785ceb"
+        "revision": "96b8110302935593c161fc849a9a8b712e79d39f"
       }
     },
     "brew": {
@@ -401,7 +401,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.7.1",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "d3816039ca9d32e9b0a96dcd39acaf9a43785ceb",
+        "Homebrew/homebrew-core": "96b8110302935593c161fc849a9a8b712e79d39f",
         "CLT": "12.3.0.0.1.1607026830",
         "Xcode": "12.0",
         "macOS": "10.15.7"
