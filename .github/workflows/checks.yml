@@ -9,5 +9,10 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Lint Application
-        run: shellcheck -- .bashrc .bash_profile *.sh scripts/tasks/*.sh custom/plugins/zhaoli/*.sh
+        run: shellcheck -- 
+          .bashrc
+          .bash_profile
+          *.sh
+          scripts/tasks/*.sh
+          custom/plugins/zhaoli/*.sh
 
