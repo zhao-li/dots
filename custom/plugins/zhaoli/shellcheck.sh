@@ -10,5 +10,10 @@ lint_project() {
     group 'zhaoli'
   fi
 
-  shellcheck -- .bashrc .bash_profile *.sh scripts/tasks/*.sh custom/plugins/zhaoli/*.sh
+  shellcheck -- \
+    .bashrc \
+    .bash_profile \
+    *.sh \
+    scripts/tasks/*.sh \
+    custom/plugins/zhaoli/*.sh
 }

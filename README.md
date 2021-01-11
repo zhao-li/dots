@@ -1,5 +1,7 @@
 # Environment Customizations
 
+![Checks](https://github.com/zhao-li/dots/workflows/Checks/badge.svg)
+
 Getting Started
 ---------------
 1. clone repository: `git clone --recursive https://github.com/zhao-li/dots.git`
