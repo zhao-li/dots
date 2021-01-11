@@ -5,6 +5,7 @@
 run_on_entry() {
   if [ -d "$HOME/.oh-my-zsh" ] && [ -f "$HOME/dots/custom/oh-my-zsh.sh" ]; then
     export ZSH_CUSTOM="$HOME/dots/custom/"
+    export ZSH_DISABLE_COMPFIX=true
     . ~/dots/custom/oh-my-zsh.sh
   fi
   clean_docker
