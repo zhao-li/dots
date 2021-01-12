@@ -64,4 +64,6 @@ export SCM_CHECK=true
 # export BASH_IT_RELOAD_LEGACY=1
 
 # Load Bash It
+# shellcheck disable=SC1090 # this file is external to the project
 source "$BASH_IT"/bash_it.sh
+
