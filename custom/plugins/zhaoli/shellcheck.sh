@@ -15,7 +15,7 @@ lint_project() {
       . \
         -type f \
         -regex ".*\(\.sh\|\.bash.*\|\.zsh.*\)" \
-        "!" -path "**/zsh-*" \
+        -not -path "**/zsh-*" \
   )
 
   for file in $files; do
