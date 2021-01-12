@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # This configures the custom oh-my-zsh theme
 # deferring to scripts/prompt.sh to handle setting the prompt
