@@ -9,9 +9,16 @@ Getting Started
 
 Linting
 -------
-To lint shell scripts:
+To lint shell scripts locally:
 
     $ lint_project
+
+To lint shell scripts using container:
+
+    $ docker run --rm -it -v $(pwd):/mnt koalaman/shellcheck-alpine:v0.7.1
+    container$ cd /mnt/
+    container:/mnt$ source custom/plugins/zhaoli/shellcheck.sh
+    container:/mnt$ lint_project
 
 Using asciinema
 ---------------
