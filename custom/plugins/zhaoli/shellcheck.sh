@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # This script and its functions supports shellcheck.
 
