@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # This script and its functions supports shellcheck.
 
@@ -10,10 +10,15 @@ lint_project() {
     group 'zhaoli'
   fi
 
-  shellcheck -- \
-    *.sh \
-    .bash*
-  for file in **/*.sh; do
+  files=$(
+    find \
+      . \
+        -type f \
+        -regex ".*\(\.sh\|\.bash.*\|\.zsh.*\)" \
+        -not -path "**/zsh-*" \
+  )
+
+  for file in $files; do
     shellcheck "$file"
   done
 }

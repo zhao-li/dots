@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # These miscellaneous utility functions support configuring the environment
 

@@ -5,6 +5,7 @@ on: push
 jobs:
   lint-shell:
     runs-on: ubuntu-latest
+    container: koalaman/shellcheck-alpine:v0.7.1
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2

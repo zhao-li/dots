@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -9,7 +11,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="zhaoli"
+export ZSH_THEME="zhaoli"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -63,7 +65,7 @@ ZSH_THEME="zhaoli"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
-ZSH_CUSTOM=$HOME/dots/custom/
+export ZSH_CUSTOM=$HOME/dots/custom/
 
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
@@ -71,14 +73,15 @@ ZSH_CUSTOM=$HOME/dots/custom/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(git)
-plugins=(
+export plugins=(
   git-prompt
   zhaoli
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
 
-source $ZSH/oh-my-zsh.sh
+# shellcheck disable=SC1090 # this file is external to the project
+. "$ZSH"/oh-my-zsh.sh
 
 # User configuration
 

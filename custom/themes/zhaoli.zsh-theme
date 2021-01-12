@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # This configures the custom oh-my-zsh theme
 # deferring to scripts/prompt.sh to handle setting the prompt
@@ -19,8 +19,8 @@ else
   ZSH_THEME_GIT_PROMPT_CLEAN='🦄'
 fi
 
-local user="%F{cyan}%n"
-local dir="%F{green}%~%f"
+user="%F{cyan}%n"
+dir="%F{green}%~%f"
 
 # based off of: https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git-prompt/git-prompt.plugin.zsh
 git_info() {
@@ -46,7 +46,10 @@ git_info() {
 PROMPT=$'$FG[237]-------------------------------------------------------------------------------%{$reset_color%}\n'
 PROMPT+="${user}"
 PROMPT+="${dir}"
+# this function needs to be called later and should not be expanded
+# shellcheck disable=SC2016
 PROMPT+='$(git_info)'
-PROMPT+='%{${reset_color}%}$ '
+# shellcheck disable=SC2154 # reset_color is provided by zsh
+PROMPT+="%{${reset_color}%}$ "
 
-RPROMPT=''
+export RPROMPT=''
