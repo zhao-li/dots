@@ -11,9 +11,10 @@ lint_project() {
   fi
 
   shellcheck -- \
-    .bashrc \
-    .bash_profile \
     *.sh \
-    scripts/tasks/*.sh \
-    custom/plugins/zhaoli/*.sh
+    .bash*
+  for file in **/*.sh; do
+    shellcheck "$file"
+  done
 }
+
