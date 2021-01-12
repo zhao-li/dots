@@ -8,11 +8,8 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
+      - name: Load Function
+        run: source custom/plugins/zhaoli/shellcheck.sh
       - name: Lint Application
-        run: shellcheck -- 
-          .bashrc
-          .bash_profile
-          *.sh
-          scripts/tasks/*.sh
-          custom/plugins/zhaoli/*.sh
+        run: lint_project
 
