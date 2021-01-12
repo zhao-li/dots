@@ -10,10 +10,15 @@ lint_project() {
     group 'zhaoli'
   fi
 
-  shellcheck -- \
-    *.sh \
-    .bash*
-  for file in **/*.sh; do
+  files=$(
+    find \
+      . \
+        -type f \
+        -regex ".*\(\.sh\|\.bash.*\|\.zsh.*\)" \
+        "!" -path "**/zsh-*" \
+  )
+
+  for file in $files; do
     shellcheck "$file"
   done
 }
