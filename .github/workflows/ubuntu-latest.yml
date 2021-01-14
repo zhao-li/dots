@@ -1,0 +1,13 @@
+name: Ubuntu Latest
+
+on: push
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Bootstrap
+        run: ./bootstrap.sh
+
