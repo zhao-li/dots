@@ -5,6 +5,7 @@
 ![MacOS 11.0](https://github.com/zhao-li/dots/workflows/MacOS%2011.0/badge.svg)
 ![Ubuntu 16.04](https://github.com/zhao-li/dots/workflows/Ubuntu%2016.04/badge.svg)
 ![Ubuntu 18.04](https://github.com/zhao-li/dots/workflows/Ubuntu%2018.04/badge.svg)
+![Ubuntu 20.04](https://github.com/zhao-li/dots/workflows/Ubuntu%2020.04/badge.svg)
 
 Getting Started
 ---------------
