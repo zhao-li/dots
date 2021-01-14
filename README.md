@@ -1,6 +1,7 @@
 # Environment Customizations
 
-![Checks](https://github.com/zhao-li/dots/workflows/Checks/badge.svg)
+![Code Checks](https://github.com/zhao-li/dots/workflows/Checks/badge.svg)
+![MacOS 10.15](https://github.com/zhao-li/dots/workflows/MacOS%2010.15/badge.svg)
 
 Getting Started
 ---------------
