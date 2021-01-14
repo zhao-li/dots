@@ -3,7 +3,7 @@ name: MacOS 10.15
 on: push
 
 jobs:
-  lint-shell:
+  bootstrap:
     runs-on: macos-10.15
     steps:
       - name: Checkout Code
