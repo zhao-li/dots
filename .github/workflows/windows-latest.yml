@@ -1,0 +1,13 @@
+name: Windows Latest
+
+on: push
+
+jobs:
+  bootstrap:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Bootstrap
+        run: ./bootstrap.sh
+
