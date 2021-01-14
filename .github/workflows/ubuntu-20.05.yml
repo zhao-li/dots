@@ -1,0 +1,13 @@
+name: Ubuntu 20.05
+
+on: push
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-20.05
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Bootstrap
+        run: ./bootstrap.sh
+
