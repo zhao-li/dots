@@ -6,6 +6,7 @@
 ![Ubuntu 16.04](https://github.com/zhao-li/dots/workflows/Ubuntu%2016.04/badge.svg)
 ![Ubuntu 18.04](https://github.com/zhao-li/dots/workflows/Ubuntu%2018.04/badge.svg)
 ![Ubuntu 20.04](https://github.com/zhao-li/dots/workflows/Ubuntu%2020.04/badge.svg)
+![Windows 2019](https://github.com/zhao-li/dots/workflows/Windows%202019/badge.svg)
 
 Getting Started
 ---------------
