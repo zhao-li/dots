@@ -1,9 +1,9 @@
 # Environment Customizations
 
 ![Code Checks](https://github.com/zhao-li/dots/workflows/Checks/badge.svg)
+![MacOS Latest](https://github.com/zhao-li/dots/workflows/MacOS%20Latest/badge.svg)
 ![MacOS 10.15](https://github.com/zhao-li/dots/workflows/MacOS%2010.15/badge.svg)
 ![MacOS 11.0](https://github.com/zhao-li/dots/workflows/MacOS%2011.0/badge.svg)
-![MacOS Latest](https://github.com/zhao-li/dots/workflows/MacOS%20Latest/badge.svg)
 ![Ubuntu 16.04](https://github.com/zhao-li/dots/workflows/Ubuntu%2016.04/badge.svg)
 ![Ubuntu 18.04](https://github.com/zhao-li/dots/workflows/Ubuntu%2018.04/badge.svg)
 ![Ubuntu 20.04](https://github.com/zhao-li/dots/workflows/Ubuntu%2020.04/badge.svg)
