@@ -9,6 +9,10 @@ for file in "$project_path"/custom/plugins/zhaoli/*.sh; do
   # shellcheck disable=SC1090
   . "$file"
 done
+for file in "$project_path"/custom/plugins/zhaoli/*.bash; do
+  # shellcheck disable=SC1090
+  . "$file"
+done
 
 set_up_bash "$project_path"
 set_up_zsh "$project_path"
