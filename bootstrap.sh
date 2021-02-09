@@ -10,10 +10,6 @@ for file in "$project_path"/custom/plugins/zhaoli/*.sh; do
   . "$file"
 done
 
-install_bash_it
-install_oh_my_zsh
-"$project_path"/scripts/set_up.sh "$project_path"
-
 if _macos; then
   echo "doing mac stuff"
   install_brew
@@ -31,6 +27,10 @@ elif _linux; then
 elif _windows; then
   echo "doing microsoft stuff"
 fi
+
+install_bash_it
+install_oh_my_zsh
+"$project_path"/scripts/set_up.sh "$project_path"
 
 echo "run these manually to complete set up:"
 echo "set_up_bash_it"
