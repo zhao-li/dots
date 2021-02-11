@@ -81,7 +81,9 @@ export plugins=(
 )
 
 # shellcheck disable=SC1090 # this file is external to the project
-. "$ZSH"/oh-my-zsh.sh
+if [ -d "$HOME/.oh-my-zsh" ] && [ -f "$HOME/dots/custom/oh-my-zsh.bash" ]; then
+  . "$ZSH"/oh-my-zsh.sh
+fi
 
 # User configuration
 
