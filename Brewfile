@@ -4,6 +4,7 @@ tap "homebrew/cask-drivers" # remove when possible; required for displaylink
 tap "homebrew/core"
 
 brew "asciinema"
+# brew "bash-completion" # needed for git auto-complete using bash
 brew "bitwarden-cli"
 brew "git"
 brew "jq"
