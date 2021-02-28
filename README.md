@@ -14,7 +14,7 @@
 Getting Started
 ---------------
 1. clone repository: `git clone --recursive https://github.com/zhao-li/dots.git`
-1. bootstrap environment: `./bootstrap.sh`
+1. bootstrap environment: `./bootstrap.bash`
 
 Linting
 -------
@@ -28,6 +28,20 @@ To lint shell scripts using container:
     container$ cd /mnt/
     container:/mnt$ source custom/plugins/zhaoli/shellcheck.sh
     container:/mnt$ lint_project
+
+Using Virtual Machines
+----------------------
+To bootstrap Ubuntu 16.04:
+
+    $ vagrant up ubuntu_16_04
+
+To console in:
+
+    $ vagrant ssh ubuntu_16_04
+
+To clean up all virtual machines:
+
+    $ vagrant destroy
 
 Using asciinema
 ---------------

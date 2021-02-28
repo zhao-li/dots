@@ -9,5 +9,5 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Bootstrap
-        run: ./bootstrap.sh
+        run: ./bootstrap.bash
 
