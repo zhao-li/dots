@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
 # This script and its functions supports the installing a development environment.
 # run script without sudo: ./bootstrap.sh
 
 project_path=$(cd "$(dirname "$0")" || exit; pwd -P)
     
-for file in "$project_path"/custom/plugins/zhaoli/*.sh; do
+for file in "$project_path"/custom/plugins/zhaoli/*.{sh,bash}; do
   # shellcheck disable=SC1090
   . "$file"
 done

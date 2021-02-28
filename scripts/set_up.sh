@@ -1,15 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
 # This script sets up the applications
 # example usage: $ scripts/set_up.sh /Users/zhaoli/dots/
 
 project_path=$1
 
-for file in "$project_path"/custom/plugins/zhaoli/*.sh; do
-  # shellcheck disable=SC1090
-  . "$file"
-done
-for file in "$project_path"/custom/plugins/zhaoli/*.bash; do
+for file in "$project_path"/custom/plugins/zhaoli/*.{sh,bash}; do
   # shellcheck disable=SC1090
   . "$file"
 done
