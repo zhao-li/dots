@@ -13,14 +13,14 @@ set_up_vscode() {
   project_path=$1
   file=settings.json
   if _macos; then
-    path="~/Library/Application\ Support/Code/User/"
+    path="$HOME/Library/Application\ Support/Code/User/"
     mkdir -p "$path"
     ln \
       -sf \
       "$project_path"/"$file" \
       "$path"/"$file"
   elif _linux; then
-    path="~/.config/Code/User/"
+    path="$HOME/.config/Code/User/"
     mkdir -p "$path"
     ln \
       -sf \
@@ -47,3 +47,4 @@ install_vscode_extensions() {
     --install-extension ms-vsliveshare.vsliveshare-audio \
     --install-extension vscodevim.vim
 }
+
