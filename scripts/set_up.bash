@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This script sets up the applications
-# example usage: $ scripts/set_up.sh /Users/zhaoli/dots/
+# example usage: $ scripts/set_up.bash /Users/zhaoli/dots/
 
 project_path=$1
 

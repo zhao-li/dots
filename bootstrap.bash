@@ -30,7 +30,7 @@ fi
 
 install_bash_it
 install_oh_my_zsh
-"$project_path"/scripts/set_up.sh "$project_path"
+"$project_path"/scripts/set_up.bash "$project_path"
 
 echo "run these manually to complete set up:"
 echo "set_up_bash_it"
