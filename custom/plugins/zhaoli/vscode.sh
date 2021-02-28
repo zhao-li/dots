@@ -12,10 +12,23 @@ set_up_vscode() {
 
   project_path=$1
   file=settings.json
-  ln \
-    -sf \
-    "$project_path"/"$file" \
-    ~/Library/Application\ Support/Code/User/"$file"
+  if _macos; then
+    path="~/Library/Application\ Support/Code/User/"
+    mkdir -p "$path"
+    ln \
+      -sf \
+      "$project_path"/"$file" \
+      "$path"/"$file"
+  elif _linux; then
+    path="~/.config/Code/User/"
+    mkdir -p "$path"
+    ln \
+      -sf \
+      "$project_path"/"$file" \
+      "$path"/"$file"
+  elif _windows; then
+    echo "should be %APPDATA%/Code/User/$file"
+  fi
 }
 
 # Install VSCode extensions
