@@ -11,6 +11,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Lint Application
         run: |
-          source custom/plugins/zhaoli/shellcheck.sh
+          source custom/plugins/zhaoli/shellcheck.bash
           lint_project
 
