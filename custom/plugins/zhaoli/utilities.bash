@@ -40,7 +40,7 @@ _linux() {
   true=0
   false=1
   local running=$false
-  if [ "$(substr "$(uname -s)" 1 5)" = "Linux" ]; then
+  if [ "$(uname)" = "Linux" ]; then
     running=$true
   fi
   return $running
@@ -55,7 +55,7 @@ _windows() {
   true=0
   false=1
   local running=$false
-  if [ "$(substr "$(uname -s)" 1 10)" = "MINGW32_NT" ]; then
+  if [ "$(uname)" = "MINGW32_NT" ]; then
     running=$true
   fi
   return $running
