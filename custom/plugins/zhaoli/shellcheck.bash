@@ -9,6 +9,8 @@ lint_project() {
     about 'lint dots project for community known errors'
     group 'zhaoli'
   fi
+  
+  findings_found=0
 
   files=$(
     find \
@@ -19,7 +21,11 @@ lint_project() {
   )
 
   for file in $files; do
-    shellcheck "$file"
+    if ! shellcheck "$file"; then
+      findings_found=1
+    fi
   done
+
+  return $findings_found
 }
 
