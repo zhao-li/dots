@@ -31,7 +31,6 @@ To lint shell scripts using container:
         --volume $(pwd):/mnt/ \
         --workdir "/mnt/" \
         koalaman/shellcheck-alpine:v0.7.1
-    container$ cd /mnt/
     container:/mnt$ source custom/plugins/zhaoli/shellcheck.bash
     container:/mnt$ lint_project
 
