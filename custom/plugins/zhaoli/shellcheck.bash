@@ -15,9 +15,9 @@ lint_project() {
   files=$(
     find \
       . \
-        -type f \
-        -regex ".*\(\.sh\|\.bash.*\|\.zsh.*\)" \
-        -not -path "**/zsh-*" \
+      -type f \
+      -regex ".*\(\.sh\|\.bash.*\|\.zsh.*\)" \
+      -not -path "**/zsh-*" \
   )
 
   for file in $files; do
