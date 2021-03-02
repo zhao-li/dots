@@ -7,7 +7,7 @@ project_path=$(cd "$(dirname "$0")" || exit; pwd -P)
     
 for file in "$project_path"/custom/plugins/zhaoli/*.{sh,bash}; do
   # shellcheck disable=SC1090
-  . $file
+  . "$file"
 done
 
 if _macos; then
