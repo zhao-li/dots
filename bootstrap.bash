@@ -12,8 +12,10 @@ done
 
 if _macos; then
   echo "doing mac stuff"
-  install_brew
-  install_brew_packages
+  if _admin; then
+    install_brew
+    install_brew_packages
+  fi
   install_vscode_extensions
 elif _linux; then
   echo "doing ubuntu stuff"

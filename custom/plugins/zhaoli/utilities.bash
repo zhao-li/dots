@@ -125,6 +125,22 @@ _oh_my_zsh_running() {
   return $running
 }
 
+# This function checks if user is admin
+# example usage:
+# if _admin; then
+#   echo "do admin stuff"
+# fi
+_admin() {
+  true=0
+  false=1
+  local admin=$false
+  if id | grep "admin"; then
+    admin=$true
+  fi
+  return $admin
+}
+
+
 # This function updates everything in the environment
 # example usage: update
 update() {
@@ -134,7 +150,8 @@ update() {
   if _zsh_running; then
     omz update
   fi
-  if _macos; then
+  if _macos && _admin; then
     update_brew
   fi
 }
+
