@@ -134,7 +134,7 @@ _admin() {
   true=0
   false=1
   local admin=$false
-  if id | grep "admin"; then
+  if id | grep --quiet "admin"; then
     admin=$true
   fi
   return $admin
