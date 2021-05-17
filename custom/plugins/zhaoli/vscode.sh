@@ -41,7 +41,6 @@ install_vscode_extensions() {
 
   code \
     --install-extension donjayamanne.githistory \
-    --install-extension eamodio.gitlens \
     --install-extension grapecity.gc-excelviewer \
     --install-extension karigari.chat \
     --install-extension mhutchie.git-graph \
