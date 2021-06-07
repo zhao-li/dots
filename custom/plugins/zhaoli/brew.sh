@@ -23,7 +23,7 @@ load_brew() {
     group 'zhaoli'
   fi
 
-  export PATH="/usr/local/bin:$PATH"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 }
 
 # Install brew packages

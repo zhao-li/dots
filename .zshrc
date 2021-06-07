@@ -10,6 +10,7 @@ run_on_entry() {
     . ~/dots/custom/oh-my-zsh.bash
   fi
   clean_docker
+  load_brew
   configure_autosuggestion
 }
 
