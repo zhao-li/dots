@@ -10,8 +10,10 @@ run_on_entry() {
     . ~/dots/custom/oh-my-zsh.bash
   fi
   clean_docker
-  load_brew
   configure_autosuggestion
+  if _admin; then
+    load_brew
+  fi
 }
 
 run_on_exit() {
