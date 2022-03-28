@@ -82,6 +82,7 @@ export plugins=(
 
 # shellcheck disable=SC1090 # this file is external to the project
 if [ -d "$HOME/.oh-my-zsh" ] && [ -f "$HOME/dots/custom/oh-my-zsh.bash" ]; then
+  alias python="python3"
   . "$ZSH"/oh-my-zsh.sh
 fi
 
