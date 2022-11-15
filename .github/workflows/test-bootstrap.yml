@@ -3,24 +3,14 @@ name: Test Bootstrap
 on: push
 
 jobs:
-  bootstrap-on-mac:
-    runs-on: macos-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
-      - name: Bootstrap
-        run: ./bootstrap.bash
-
-  bootstrap-on-ubuntu:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
-      - name: Bootstrap
-        run: ./bootstrap.bash
-
-  bootstrap-on-windows:
-    runs-on: windows-latest
+  bootstrap:
+    strategy:
+      matrix:
+        os:
+          - macos-latest
+          - ubuntu-latest
+          - windows-latest
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
