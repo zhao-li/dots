@@ -3,11 +3,24 @@ name: Test Bootstrap
 on: push
 
 jobs:
-  bootstrap:
-    runs-on:
-      - macos-latest
-      - ubuntu-latest
-      - windows-latest
+  bootstrap-on-mac:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Bootstrap
+        run: ./bootstrap.bash
+
+  bootstrap-on-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Bootstrap
+        run: ./bootstrap.bash
+
+  bootstrap-on-windows:
+    runs-on: windows-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
