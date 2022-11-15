@@ -3,12 +3,8 @@ name: Test Bootstrap
 on: push
 
 jobs:
-  strategy:
-    matrix:
-      os: [ macos-latest, ubuntu-latest, windows-latest ]
-  runs-on: ${{ matrix.os }}
-
   bootstrap:
+    runs-on: [ macos-latest, ubuntu-latest, windows-latest ]
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
