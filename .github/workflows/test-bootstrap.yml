@@ -2,10 +2,11 @@ name: Test Bootstrap
 
 on: push
 
-strategy:
-  matrix:
-    os: [ macos-latest, ubuntu-latest, windows-latest ]
 jobs:
+  strategy:
+    matrix:
+      os: [ macos-latest, ubuntu-latest, windows-latest ]
+
   bootstrap:
     runs-on: ${{ matrix.os }}
     steps:
