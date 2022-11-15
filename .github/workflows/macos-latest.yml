@@ -5,6 +5,7 @@ on: push
 jobs:
   bootstrap:
     runs-on: macos-latest
+    using: composite
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
