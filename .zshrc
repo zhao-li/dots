@@ -11,9 +11,7 @@ run_on_entry() {
   fi
   clean_docker
   configure_autosuggestion
-  if _admin; then
-    load_brew
-  fi
+  load_brew
 }
 
 run_on_exit() {
