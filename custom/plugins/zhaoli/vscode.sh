@@ -42,10 +42,8 @@ install_vscode_extensions() {
   code \
     --install-extension donjayamanne.githistory \
     --install-extension grapecity.gc-excelviewer \
-    --install-extension karigari.chat \
     --install-extension mhutchie.git-graph \
     --install-extension ms-vsliveshare.vsliveshare \
-    --install-extension ms-vsliveshare.vsliveshare-audio \
     --install-extension vscodevim.vim
 }
 
