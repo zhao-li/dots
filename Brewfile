@@ -1,6 +1,4 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-drivers" # remove when possible; required for displaylink-manager
 
 brew "git"
 brew "mas"
