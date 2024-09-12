@@ -21,4 +21,5 @@ cask "visual-studio-code"
 cask "vivaldi"
 
 mas "OneDrive", id: 823766827
+mas "CoPilot", id: 1447330651
 
