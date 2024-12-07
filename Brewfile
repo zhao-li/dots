@@ -20,6 +20,7 @@ cask "signal"
 cask "visual-studio-code"
 cask "vivaldi"
 
-mas "OneDrive", id: 823766827
+mas "Bitwarden", id: 1352778147
 mas "CoPilot", id: 1447330651
+mas "OneDrive", id: 823766827
 
