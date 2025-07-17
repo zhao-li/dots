@@ -12,6 +12,7 @@ done
 
 set_up_bash "$project_path"
 set_up_zsh "$project_path"
+set_up_ssh "$project_path"
 set_up_git "$project_path"
 set_up_vim "$project_path"
 set_up_tmux "$project_path"
