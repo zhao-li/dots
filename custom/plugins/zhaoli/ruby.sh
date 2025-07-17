@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# This script and its functions supports the ruby environment.
+# This script and its functions supports the Ruby environment.
 
 # Set up chruby
 # Example usage: set_up_chruby

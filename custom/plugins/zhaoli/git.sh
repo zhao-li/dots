@@ -1,8 +1,8 @@
 #!/bin/sh
 
-# These functions support git
+# These functions support Git
 
-# This function configures VS Code
+# This function configures Git
 # example usage: set_up_git /Users/zhaoli/dots/
 set_up_git() {
   if _bash_it_running; then

@@ -1,12 +1,12 @@
 #!/bin/sh
 
-# These functions support configuring vim
+# These functions support configuring Vim
 
-# This function configures vim
+# This function configures Vim
 # example usage: set_up_vim /Users/zhaoli/dots/
 set_up_vim() {
   if _bash_it_running; then
-    about 'set up vim'
+    about 'set up Vim'
     group 'zhaoli'
   fi
 

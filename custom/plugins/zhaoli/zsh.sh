@@ -1,12 +1,12 @@
 #!/bin/sh
 
-# These functions support configuring bash
+# These functions support configuring Zsh
 
-# This function configures zsh
+# This function configures Zsh
 # example usage: set_up_zsh /Users/zhaoli/dots/
 set_up_zsh() {
   if _bash_it_running; then
-    about 'set up zsh'
+    about 'set up Zsh'
     group 'zhaoli'
   fi
 
@@ -14,11 +14,11 @@ set_up_zsh() {
   _sym_link .zshrc "$project_path"
 }
 
-# This function installs oh-my-zsh
+# This function installs Oh My Zsh
 # example usage: install_oh_my_zsh
 install_oh_my_zsh() {
   if _bash_it_running; then
-    about 'install oh-my-zsh'
+    about 'install Oh My Zsh'
     group 'zhaoli'
   fi
 
