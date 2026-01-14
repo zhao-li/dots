@@ -1,12 +1,9 @@
-tap "homebrew/bundle"
-
 brew "git"
 brew "mas"
 brew "tmux"
 brew "vim" # ensures copy & pasting to clipboard works
 brew "zsh"
 
-cask "adobe-acrobat-reader"
 cask "brave-browser"
 cask "displaylink"
 cask "docker-desktop"
@@ -14,6 +11,7 @@ cask "google-chrome"
 cask "handbrake-app"
 cask "hyper"
 cask "libreoffice"
+cask "losslesscut"
 cask "proton-mail-bridge"
 cask "rectangle"
 cask "signal"
