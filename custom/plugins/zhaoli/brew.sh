@@ -49,7 +49,9 @@ update_brew() {
   fi
 
   brew update
-  brew upgrade --greedy
+  brew upgrade \
+    --greedy \
+    --yes
   mas upgrade
   brew cleanup
   brew doctor
