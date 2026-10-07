@@ -3,4 +3,4 @@
 [core]
   pager = less -Xr
 [include]
-  path = Projects/project-configurations/git/.gitconfig.common
+  path = ~/Projects/project-configurations/git/.gitconfig
