@@ -1,5 +1,8 @@
 [user]
 	name = Zhao Li
+[credential]
+  #helper = store # used for troubleshooting. avoid using this because it
+  # stores PATs as plaintext in ~/.git-credentials and is a security risk
 [core]
   pager = less -Xr
 [include]
