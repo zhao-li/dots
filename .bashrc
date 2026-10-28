@@ -10,7 +10,6 @@ run_on_entry() {
   customize_shell
   load_brew
   clean_docker
-  set_up_chruby
 }
 
 run_on_exit() {
