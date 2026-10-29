@@ -3,7 +3,7 @@
 # This script and its functions supports brew.
 
 # install brew
-# Example usage: load_brew
+# Example usage: install_brew
 install_brew() {
   if _bash_it_running; then
     about 'install brew'

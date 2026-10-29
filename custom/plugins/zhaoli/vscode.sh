@@ -32,7 +32,7 @@ set_up_vscode() {
 }
 
 # Install VSCode extensions
-# Example usage: load_brew
+# Example usage: install_vscode_exteions
 install_vscode_extensions() {
   if _bash_it_running; then
     about 'install VSCode extensions'
