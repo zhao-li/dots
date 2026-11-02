@@ -6,4 +6,4 @@
 [core]
   pager = less -Xr
 [include]
-  path = ~/Projects/project-configurations/git/.gitconfig
+  path = ~/dots/.gitconfig.shim
