@@ -11,7 +11,9 @@ run_on_entry() {
   fi
   clean_docker
   configure_autosuggestion
-  load_brew
+  if _macos; then
+    load_brew
+  fi
 }
 
 run_on_exit() {
