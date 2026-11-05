@@ -13,19 +13,20 @@ set_up_vscode() {
   project_path=$1
   file=settings.json
   if _macos; then
-    path="$HOME/Library/Application\ Support/Code/User/"
-    mkdir -p "$path"
+    config_dir="$HOME/Library/Application Support/Code/User/"
+    mkdir -p "$config_dir"
     ln \
       -sf \
       "$project_path"/"$file" \
-      "$path"/"$file"
+      "$config_dir"/"$file"
+    echo "done"
   elif _linux; then
-    path="$HOME/.config/Code/User/"
-    mkdir -p "$path"
+    config_dir="$HOME/.config/Code/User/"
+    mkdir -p "$config_dir"
     ln \
       -sf \
       "$project_path"/"$file" \
-      "$path"/"$file"
+      "$config_dir"/"$file"
   elif _windows; then
     echo "should be %APPDATA%/Code/User/$file"
   fi
