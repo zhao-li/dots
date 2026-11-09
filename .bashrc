@@ -8,8 +8,10 @@ run_on_entry() {
     . "$HOME/dots/custom/bash-it.sh"
   fi
   customize_shell
-  load_brew
   clean_docker
+  if _macos; then
+    load_brew
+  fi
 }
 
 run_on_exit() {
