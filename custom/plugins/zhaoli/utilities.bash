@@ -153,5 +153,9 @@ update() {
   if _macos && _admin; then
     update_brew
   fi
+  if _linux; then
+    sudo apt-get update
+    sudo apt-get upgrade
+  fi
 }
 
