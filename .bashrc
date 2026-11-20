@@ -2,11 +2,12 @@
 
 # This script and its functions configures bash
 
+if [ -d "$HOME/.bash_it" ] && [ -f "$HOME/dots/custom/bash-it.sh" ]; then
+  # shellcheck disable=SC1090
+  . "$HOME/dots/custom/bash-it.sh"
+fi
+
 run_on_entry() {
-  if [ -d "$HOME/.bash_it" ] && [ -f "$HOME/dots/custom/bash-it.sh" ]; then
-    # shellcheck disable=SC1090
-    . "$HOME/dots/custom/bash-it.sh"
-  fi
   customize_shell
   clean_docker
   if _macos; then
